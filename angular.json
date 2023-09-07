@@ -30,9 +30,13 @@
 							"projects/host-app/src/assets"
 						],
 						"styles": [
+							"node_modules/bootstrap/dist/css/bootstrap.min.css",
 							"projects/host-app/src/styles.scss"
 						],
-						"scripts": [],
+						"scripts": [
+							"node_modules/@popperjs/core/dist/umd/popper.min.js",
+  							"node_modules/bootstrap/dist/js/bootstrap.min.js"
+						],
 						"extraWebpackConfig": "projects/host-app/webpack.config.js",
 						"commonChunk": false
 					},
