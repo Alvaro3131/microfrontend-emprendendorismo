@@ -4,7 +4,7 @@ import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
-  { path: 'dashboard' , loadChildren: () => import('./dahsboard/dahsboard.module').then(m => m.DahsboardModule)},
+  { path: 'dashboard' , loadChildren: () => import('./dahsboard/dashboard.module').then(m => m.DashboardModule)},
 ];
 
 @NgModule({
@@ -12,3 +12,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
