@@ -7,28 +7,26 @@
 }
 
 .container .loader {
-    width: 50%;
-    height: 80%;
+    width: 55%;
+    height: 75%;
     border: solid 15px #373333;
     border-radius: 50%;
+    border-top: 15px solid  #F8A900;
     position: relative;
 }
 
-.container .loader::before{
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 100%;
-  background-color: #F8A900;
-  top: 0;
-  left: 0;
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
+// .container .loader::before{
+//   content: '';
+//   position: absolute;
+//   width: 15px;
+//   height: 100%;
+//   background-color: #F8A900;
+//   border-radius: 20px;
+//   -webkit-border-radius: 20px;
+//   -moz-border-radius: 20px;
+//   -ms-border-radius: 20px;
+//   -o-border-radius: 20px;
+// }
 
 .container .message {
     position: absolute;

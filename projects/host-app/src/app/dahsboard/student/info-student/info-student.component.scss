@@ -33,7 +33,7 @@
 .student > div{
   padding: 15px 5px;
   background-color: #003366B5;
-  width: 25%;
+  width: 23%;
   height: 80%;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -42,6 +42,82 @@
   -o-border-radius: 10px;
 }
 
+.container-hours{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.description{
+  text-align: start;
+  padding: 0px 10px;
+  width: 80%;
+}
+
+.description > span{
+  color: #F8A900;
+  font-weight: bolder;
+}
+
+.description-hour{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hour{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hour > .hour__time > span{
+  font-weight: bolder;
+  display: block;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding: 12px;
+  background-color: #04233E;
+  color: #ffff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.hour > .hour__time > p{
+  margin: 0;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: .7rem;
+  padding: 5px;
+  background-color: #003366;
+}
+
+.container-button{
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.button{
+  border: none;
+  outline: none;
+  font-weight: bolder;
+  width: 80%;
+  padding: 5px 0;
+  background-color: #F8A900;
+  border-radius: 10px;
+  color: #ffff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
 // PPP
 
 .practice{
@@ -107,5 +183,10 @@
   margin: 0;
 }
 
-
+.button--float{
+  position: absolute;
+  width: 30%;
+  bottom: 3%;
+  right: 5%;
+}
 

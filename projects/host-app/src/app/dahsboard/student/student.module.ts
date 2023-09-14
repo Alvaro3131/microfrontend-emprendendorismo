@@ -7,12 +7,16 @@ import { InfoStudentComponent } from './info-student/info-student.component';
 import { HeaderStudentComponent } from '../../shared/header-student/header-student.component';
 import { ChartCircleComponent } from '../../shared/chart-circle/chart-circle.component';
 import { NgChartsModule } from 'ng2-charts';
+import { CardHoursComponent } from './card-hours/card-hours.component';
+import { NextProjectionComponent } from './next-projection/next-projection.component';
 
 
 @NgModule({
   declarations: [
     MainPanelComponent,
     InfoStudentComponent,
+    CardHoursComponent,
+    NextProjectionComponent,
   ],
   imports: [
     CommonModule,
