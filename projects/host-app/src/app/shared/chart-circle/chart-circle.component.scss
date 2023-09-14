@@ -1,0 +1,42 @@
+.container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .loader {
+    width: 50%;
+    height: 80%;
+    border: solid 15px #373333;
+    border-radius: 50%;
+    position: relative;
+}
+
+.container .loader::before{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 100%;
+  background-color: #F8A900;
+  top: 0;
+  left: 0;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.container .message {
+    position: absolute;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
