@@ -30,8 +30,11 @@
   height: 80%;
 }
 
+.student__ppp, .student__proyection{
+    padding: 20px;
+}
+
 .student > div{
-  padding: 15px 5px;
   background-color: #003366B5;
   width: 23%;
   height: 80%;
@@ -53,7 +56,6 @@
   border: none;
   outline: none;
   font-weight: bolder;
-  width: 80%;
   padding: 5px 0;
   background-color: #F8A900;
   border-radius: 10px;
@@ -66,8 +68,11 @@
 
 .button--float{
   position: absolute;
-  width: 20%;
+  width: 350px;
   bottom: 3%;
   right: 5%;
 }
 
+.student__next{
+  background-color: transparent !important;
+}
