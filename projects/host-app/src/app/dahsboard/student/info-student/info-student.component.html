@@ -5,85 +5,15 @@
   <section class="student student--sizeInfo">
     <!-- Proxima proyeccion -->
     <div class="student__next">
-      <!-- TITLE -->
-      <div class="practice">
-        <div class="practice__despcription">
-          <h3 class="practice__title">Proxima Proyección</h3>
-        </div>
-     </div>
-     <!-- HOURS -->
-     <div class="container-hours">
-      <div class="description">
-        <span>Quedan</span>
-      </div>
-      <div class="description-hour">´
-        <div class="hour">
-          <div class="hour__time">
-            <span>08</span>
-            <p>Dias</p>
-          </div>
-           <div class="hour__time">
-            <span>05</span>
-            <p>Horas</p>
-          </div>
-           <div class="hour__time">
-            <span>02</span>
-            <p>Segundos</p>
-          </div>
-        </div>
-      </div>
-     </div>
-     <div class="container-button">
-      <button type="button" class="button">Inscribirme</button>
-     </div>
+      <app-next-projection></app-next-projection>
     </div>
-
     <!-- Horas de PPP -->
     <div class="student__ppp">
-     <div class="practice">
-      <div class="practice__despcription">
-        <h3 class="practice__title">Horas de PPP</h3>
-        <p class="practice__subtitle">Prácticas Pre Profesionales</p>
-      </div>
-     </div>
-      <div class="chart">
-        <app-chart-circle></app-chart-circle>
-      </div>
-      <div class="times">
-        <div class="times__student">
-          <span>Total Horas</span>
-          <p>700 hrs</p>
-        </div>
-        <div class="times__student">
-          <span>Horas Completadas</span>
-          <p>175 hrs</p>
-        </div>
-     </div>
+      <app-card-hours></app-card-hours>
     </div>
     <!-- Horas de Proyeccion -->
     <div class="student__proyection">
-      <!-- HEADER -->
-      <div class="practice">
-        <div class="practice__despcription">
-          <h3 class="practice__title">Horas de PS</h3>
-          <p class="practice__subtitle">Proyección Social</p>
-        </div>
-     </div>
-     <!-- CHART -->
-     <div class="chart">
-        <app-chart-circle></app-chart-circle>
-     </div>
-     <!-- FOOTER -->
-     <div class="times">
-        <div class="times__student">
-          <span>Total Horas</span>
-          <p>700 hrs</p>
-        </div>
-        <div class="times__student">
-          <span>Horas Completadas</span>
-          <p>175 hrs</p>
-        </div>
-     </div>
+      <app-card-hours></app-card-hours>
     </div>
   </section>
   <button type="button" class="button button--float">Salir o consultar otro código</button>
