@@ -30,8 +30,11 @@
   height: 80%;
 }
 
+.student__ppp, .student__proyection{
+    padding: 20px;
+}
+
 .student > div{
-  padding: 15px 5px;
   background-color: #003366B5;
   width: 23%;
   height: 80%;
@@ -40,61 +43,6 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-}
-
-.container-hours{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-
-.description{
-  text-align: start;
-  padding: 0px 10px;
-  width: 80%;
-}
-
-.description > span{
-  color: #F8A900;
-  font-weight: bolder;
-}
-
-.description-hour{
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.hour{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.hour > .hour__time > span{
-  font-weight: bolder;
-  display: block;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  margin-bottom: 5px;
-  padding: 12px;
-  background-color: #04233E;
-  color: #ffff;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.hour > .hour__time > p{
-  margin: 0;
-  display: block;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: .7rem;
-  padding: 5px;
-  background-color: #003366;
 }
 
 .container-button{
@@ -108,7 +56,6 @@
   border: none;
   outline: none;
   font-weight: bolder;
-  width: 80%;
   padding: 5px 0;
   background-color: #F8A900;
   border-radius: 10px;
@@ -118,75 +65,14 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-// PPP
-
-.practice{
-  display: flex;
-  flex-direction: column;
-  height: 20%;
-}
-
-.practice__despcription{
-  display: flex;
-  height: 100%;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.practice__despcription .practice__title, .practice__despcription .practice__subtitle{
-  color: #fff;
-}
-
-.practice__title{
-  font-weight: bolder;
-  font-size: 1.5rem;
-}
-
-.practice__subtitle{
-    font-size: 0.9rem;
-}
-.chart{
-  height: 60%;
-}
-
-.times{
-  margin: auto;
-  border-radius: 10px;
-  padding: 10px;
-  width: 95%;
-  height: 20%;
-  background-color: #003366;
-  display: flex;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.times__student{
-  padding: 10px 0;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.times__student > span{
-  color: #fff;
-  font-weight: bolder;
-}
-
-.times__student > p{
-  color: #A6A6A6;
-  margin: 0;
-}
 
 .button--float{
   position: absolute;
-  width: 30%;
+  width: 350px;
   bottom: 3%;
   right: 5%;
 }
 
+.student__next{
+  background-color: transparent !important;
+}
