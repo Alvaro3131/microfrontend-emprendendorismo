@@ -297,7 +297,7 @@
 					"defaultConfiguration": "development",
 					"options": {
 						"port": 5200,
-						"publicHost": "http://localhost:5100",
+						"publicHost": "http://localhost:5200",
 						"extraWebpackConfig": "projects/module-proyeccion-app/webpack.config.js"
 					}
 				},

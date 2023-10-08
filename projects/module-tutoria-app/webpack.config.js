@@ -32,7 +32,7 @@ module.exports = {
            name: "tutoria",
            filename: "remoteEntry.js",
            exposes: {
-            './Module': './projects/module-tutoria-app/src/app/app.component.ts',
+            './Module': './projects/module-tutoria-app/src/app/dashboard/dashboard.module.ts',
        },        
         
         // For hosts (please adjust)
