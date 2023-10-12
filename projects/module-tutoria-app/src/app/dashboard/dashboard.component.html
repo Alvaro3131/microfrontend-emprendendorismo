@@ -1,2 +1,18 @@
-<p>Hello Tutoria
-</p>
+
+  <section class="panel">
+    <article class="panel__header">
+        <nav class="links">
+            <ul class="nav">
+                <li class="nav__item"><a class="nav__link" [routerLink]="'./tutoria'" >Tutoria</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Vinculación con el medio</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Investigación</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Desarrollo Espiritual</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Soporte</a></li>
+            </ul>
+          </nav>
+    </article>
+    <article class="panel__info pt-3">
+        <router-outlet></router-outlet>
+    </article>
+  </section>
+  
