@@ -1,0 +1,127 @@
+<section class="panel">
+    <article class="panel__header">
+      <app-header-student></app-header-student>
+    </article>
+    <article class="panel__info">
+        <div class="d-flex justify-content-center align-items-center img" style="background-image: url('/assets/fondo-vinculacion.png');">
+            <p class="title-image">Vinculación con el medio</p>
+        </div>
+        <div class="main d-flex mt-3">
+            <div class="container-proyection">
+                <div class="row">
+                    <div class="col-9 d-flex container-proyection__title">
+                        <p style="margin: 0;">Próxima Proyección Social</p> 
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="proyection">
+                    <div class="proyection__title mt-3">
+                        <h4 style="color: rgba(0, 51, 102, 1); text-align: center; font-family: Roboto; font-weight: 700; font-size: 18px;">¡Salvemos el mundo!</h4>
+                    </div>
+                    <div class="container-hours">
+                        <div class="description">
+                          <span>Quedan</span>
+                        </div>
+                        <div class="description-hour">
+                          <div class="hour">
+                            <div class="hour__time">
+                              <span>08</span>
+                              <p>Dias</p>
+                            </div>
+                            <div class="hour__time">
+                              <span>05</span>
+                              <p>Horas</p>
+                            </div>
+                            <div class="hour__time">
+                              <span>02</span>
+                              <p>Minutos</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="proyection__info">
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <p class="text-4"> <strong>Fecha:</strong> 02/10/2023</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="text-4"> <strong>Hora:</strong> 10:00 AM</p>
+                            </div>
+                        </div>
+                        <p class="text-4"><strong>Lugar:</strong> Colegio San Román - Av. La Paz 456</p>
+                        <p style="text-align: center;">Proyección dirigido a todos los estudiantes sin importar el ciclo.</p>
+                    </div>
+                    <div class="proyection__button">
+                        <button class="btn btn-success mt-2" style="border: none; background-color: #F8A900; color: white; width: 100%;" type="button"><strong>Participar</strong></button>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="responsable-recursos">
+                <div class="container-responsable">
+                    <div class="row">
+                        <div class="col-9 d-flex container-responsable__title">
+                            <p style="margin: 0;">Responsable</p> 
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                    <div class="responsable">
+                        <div class="responsable__description" style="text-align: left;">
+                            <p style="font-weight: bold;">Mg. Diana Lidia Sanchez Torpoco</p>
+                            <p style="margin-bottom: 4px;"><strong>Área:</strong> Coord. Vinculación con el medio</p>
+                            <p style="margin-bottom: 4px;"><strong>Celular:</strong> 987654321</p>
+                            <p style="margin-bottom: 4px;"><strong>Correo:</strong> Correo@upeu.edu.pe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-recursos">
+                    <div class="row">
+                        <div class="col-9 d-flex container-recursos__title">
+                            <p style="margin: 0;">Recursos</p> 
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+                    <div class="recursos">
+                        <div class="recursos__info">
+                            <p style="text-align: center;">Documentos para el desarrollo</p>
+                        </div>
+                        <div class="recursos__buttons">
+                            <div class="recursos__buttons--button">
+                                <p style="margin: 0;">Guia del taller</p>
+                            </div>
+                            <div class="recursos__buttons--button">
+                                <p style="margin: 0;">Lista de Materiales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="times">
+                <div class="times__title mt-3">
+                    <h4 style="color: #F8A900; text-align: center; font-family: Roboto; font-weight: 700; font-size: 18px;">Horas completadas</h4>
+                </div>
+                <div class="times__description mt-4">
+                    <p style="text-align: center; font-weight: 700;">Aqui se muestra el avance en el cumplimiento de tus horas de Proyección Social</p>
+                </div>
+                <div class="chart">
+                    <app-chart-circle [color]="'#003366'"></app-chart-circle>
+                </div>
+                <div class="times__hours mt-2">
+                    <div class="row">
+                        <div class="col-6">
+                            <p style="text-align: center; font-weight: 800; color: rgba(0, 51, 102, 1); margin: 0;" class="text-4">Total Horas</p>
+                            <p style="text-align: center;">50 Hrs.</p>
+                        </div>
+                        <div class="col-6">
+                            <p style="text-align: center; font-weight: 800; color: rgba(0, 51, 102, 1); margin: 0;" class="text-4">Horas Completadas</p>
+                            <p style="text-align: center;">25 Hrs.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+        </div>
+    </article>
+</section>

@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.panel{
+  width: 100%;
+  height: 100vh;
+}  
+
+.panel__header{
+  height: 15%;
+}
+
+.panel__info{
+  height: 85%;
+}
+
+
+/* ------ Estilos del panel__info ------ */
+
+a, p, h1, h2 {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+a {
+   color: black !important;
+}
+
+a:hover{
+    color: rgb(52, 52, 255) !important;
+}
+
+.main {
+  margin-left: 7%;
+  margin-right: 7%;
+  column-gap: 120px;
+}
+
+.img{
+    background-size: cover;
+    margin: 0 auto;
+    min-height: 130px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.title-image{
+    color: white;
+    font-weight: 800;
+    font-family: 'Roboto';
+    font-size: 48px;
+}
+
+.container-proyection {
+  height: 100%;
+  width: 100%;
+}
+
+.container-proyection__title {
+  background-color: rgba(0, 51, 102, 1);
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+  padding-left: 15px;
+}
+
+.proyection {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+}
+
+.container-hours{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.description{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.description > span{
+  // color: #F8A900;
+  color: #F8A900;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.description-hour{
+  width: 60%;
+  display: flex;
+}
+
+.hour{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hour >  .hour__time {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hour > .hour__time > span{
+  font-weight: bolder;
+  display: block;
+  width: 51.27px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.hour > .hour__time > p{
+  margin: 0;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: .7rem;
+  padding: 5px;
+  background-color: #003366;
+}
+
+.proyection__button {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+
+.responsable-recursos  {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.container-responsable {
+  height: 100%;
+  width: 100%;
+}
+
+.container-responsable__title {
+  background-color: rgba(0, 51, 102, 1);
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+  padding-left: 15px;
+}
+
+.responsable {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+}
+
+.responsable__description {
+  margin-top: 15px;
+}
+
+.container-recursos {
+  height: 100%;
+  width: 100%;
+}
+
+.container-recursos__title {
+  background-color: rgba(0, 51, 102, 1);
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+  padding-left: 15px;
+}
+
+.recursos {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+}
+
+.recursos__info {
+  margin-top: 15px;
+}
+
+.recursos__buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.recursos__buttons--button {
+  background-color: rgba(205, 205, 205, 1);
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.recursos__buttons--button > p {
+  color: rgba(0, 51, 102, 1);
+  font-weight: 800;
+}
+
+.times {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+}
+
+.times__description {
+  color: #003366;
+}
+
+.chart{
+  height: 50%;
+}

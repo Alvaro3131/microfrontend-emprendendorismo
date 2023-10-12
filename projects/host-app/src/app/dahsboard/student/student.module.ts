@@ -8,6 +8,7 @@ import { HeaderStudentComponent } from '../../shared/header-student/header-stude
 import { ChartCircleComponent } from '../../shared/chart-circle/chart-circle.component';
 import { CardHoursComponent } from './card-hours/card-hours.component';
 import { NextProjectionComponent } from './next-projection/next-projection.component';
+import { VinculacionPanelComponent } from './vinculacion-panel/vinculacion-panel.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { NextProjectionComponent } from './next-projection/next-projection.compo
     InfoStudentComponent,
     CardHoursComponent,
     NextProjectionComponent,
+    VinculacionPanelComponent,
   ],
   imports: [
     CommonModule,
