@@ -9,15 +9,18 @@ import { ChartCircleComponent } from '../../shared/chart-circle/chart-circle.com
 import { CardHoursComponent } from './card-hours/card-hours.component';
 import { NextProjectionComponent } from './next-projection/next-projection.component';
 import { VinculacionPanelComponent } from './vinculacion-panel/vinculacion-panel.component';
+import { StudentComponent } from './student.component';
+import { TutorshipsComponent } from './tutorships/tutorships.component';
 
 
 @NgModule({
   declarations: [
-    MainPanelComponent,
+    StudentComponent,
     InfoStudentComponent,
     CardHoursComponent,
     NextProjectionComponent,
     VinculacionPanelComponent,
+    TutorshipsComponent,
   ],
   imports: [
     CommonModule,

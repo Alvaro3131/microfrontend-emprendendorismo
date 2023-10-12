@@ -5,7 +5,7 @@ import { TeacherComponent } from './teacher/teacher.component';
 
 const routes: Routes = [
   {path:'student',loadChildren: () => import('./student/student.module').then(m => m.StudentModule)},
-  {path:'teacher',component:TeacherComponent}
+  {path:'teacher',loadChildren: () => import('./teacher/teacher.module').then(m => m.TeacherModule)},
 ]
 
 @NgModule({
