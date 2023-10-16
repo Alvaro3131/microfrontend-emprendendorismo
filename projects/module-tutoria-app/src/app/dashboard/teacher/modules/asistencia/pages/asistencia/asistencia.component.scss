@@ -1,0 +1,55 @@
+.header > h1{
+  font-size: 3rem;
+  color: #4A4A4A;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  // border: 1px solid black;
+  justify-content: center;
+}
+
+.container > div{
+  width: 75%;
+}
+
+
+/* button e inputs*/
+
+.inputGroups{
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left{
+  display: flex;
+  justify-content: space-around;
+}
+
+input, select, button{
+  border: none;
+  outline: none;
+  margin: 0px 5px;
+  border-radius: 10px;
+  padding: 20px 20px;
+  background-color: #F4F4F4;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.export > button{
+  background-color: #00A037;
+}
+
+.register > button{
+  background-color: #E4752B;
+}
+
+.export > button, .register > button{
+  color: #ffff;
+}

@@ -1,1 +1,35 @@
-<p>asistencia works!</p>
+<section class="container">
+  <div>
+    <header class="header">
+      <h1>Asistencia - Activate Sistemas</h1>
+    </header>
+    <main class="main">
+      <article class="inputGroups">
+        <div class="left">
+          <div>
+            <input type="text" placeholder="Buscar">
+          </div>
+          <div>
+            <select name="semestre" id="semestre">
+              <option value="0" disabled selected>Selecciona un semestre</option>
+            </select>
+          </div>
+          <div>
+            <select name="ciclo" id="semestre">
+              <option value="0" disabled selected>Selecciona un ciclo</option>
+            </select>
+          </div>
+          <div class="export">
+            <button type="button">Exportar Excel</button>
+          </div>
+        </div>
+        <div class="right">
+          <div class="register">
+            <button type="button">Registrar</button>
+          </div>
+        </div>
+      </article>
+      <app-table></app-table>
+    </main>
+  </div>
+</section>
