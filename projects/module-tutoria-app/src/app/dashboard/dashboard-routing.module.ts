@@ -15,8 +15,15 @@ const routes: Routes = [
       {path: 'registrar-asistencia', component:RegistrarAsistenciaComponent}
     ]}
     */
-   
-  ]}
+
+  ] }
+
+
+  /* Rutas del teacher*/
+,{
+  path:'teacher',
+ loadChildren: () => import('../dashboard/teacher/teacher.module').then(m => m.TeacherModule)},
+
 ];
 
 @NgModule({
