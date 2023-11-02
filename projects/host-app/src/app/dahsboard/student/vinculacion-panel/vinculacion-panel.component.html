@@ -1,7 +1,4 @@
-<section class="panel">
-    <article class="panel__header">
-      <app-header-student></app-header-student>
-    </article>
+
     <article class="panel__info">
         <div class="d-flex justify-content-center align-items-center img" style="background-image: url('/assets/fondo-vinculacion.png');">
             <p class="title-image">Vinculación con el medio</p>
@@ -15,7 +12,7 @@
                     <div class="col-3"></div>
                 </div>
                 <div class="proyection">
-                    <div class="proyection__title mt-3">
+                <!--     <div class="proyection__title mt-3">
                         <h4 style="color: rgba(0, 51, 102, 1); text-align: center; font-family: Roboto; font-weight: 700; font-size: 18px;">¡Salvemos el mundo!</h4>
                     </div>
                     <div class="container-hours">
@@ -38,7 +35,8 @@
                             </div>
                           </div>
                         </div>
-                    </div>
+                    </div> -->
+                    <img src="assets/campaña.jpg" alt="" width="90%">
                     <div class="proyection__info">
                         <div class="row mt-4">
                             <div class="col-6">
@@ -49,32 +47,60 @@
                             </div>
                         </div>
                         <p class="text-4"><strong>Lugar:</strong> Colegio San Román - Av. La Paz 456</p>
-                        <p style="text-align: center;">Proyección dirigido a todos los estudiantes sin importar el ciclo.</p>
+                        <!-- <p style="text-align: center;">Proyección dirigido a todos los estudiantes sin importar el ciclo.</p> -->
                     </div>
-                    <div class="proyection__button">
+                  <!--   <div class="proyection__button">
                         <button class="btn btn-success mt-2" style="border: none; background-color: #F8A900; color: white; width: 100%;" type="button"><strong>Participar</strong></button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
-                
-            <div class="responsable-recursos">
-                <div class="container-responsable">
+            <div class="times">
+                <div class="times__title mt-3">
+                    <h4 style="color: #F8A900; text-align: center; font-family: Roboto; font-weight: 700; font-size: 18px;">Horas completadas</h4>
+                </div>
+                <div class="times__description mt-4">
+                    <p style="text-align: center; font-weight: 700;">Aqui se muestra el avance en el <br> cumplimiento de tus horas de <br>Proyección Social</p>
+                </div>
+                <div class="chart">
+                    <app-chart-circle [color]="'#003366'"></app-chart-circle>
+                </div>
+                <div class="times__hours mt-2">
                     <div class="row">
-                        <div class="col-9 d-flex container-responsable__title">
-                            <p style="margin: 0;">Responsable</p> 
+                        <div class="col-6">
+                            <p style="text-align: center; font-weight: bold; color: rgba(0, 51, 102, 1); margin: 0;" class="text-4">Total Horas</p>
+                            <p style="text-align: center; color: #3E98B6; font-weight: bold;">50 Hrs.</p>
                         </div>
-                        <div class="col-3"></div>
-                    </div>
-                    <div class="responsable">
-                        <div class="responsable__description" style="text-align: left;">
-                            <p style="font-weight: bold;">Mg. Diana Lidia Sanchez Torpoco</p>
-                            <p style="margin-bottom: 4px;"><strong>Área:</strong> Coord. Vinculación con el medio</p>
-                            <p style="margin-bottom: 4px;"><strong>Celular:</strong> 987654321</p>
-                            <p style="margin-bottom: 4px;"><strong>Correo:</strong> Correo@upeu.edu.pe</p>
+                        <div class="col-6">
+                            <p style="text-align: center; font-weight: bold; color: rgba(0, 51, 102, 1); margin: 0;" class="text-4">Horas Completadas</p>
+                            <p style="text-align: center; color: #3E98B6; font-weight: bold;">25 Hrs.</p>
                         </div>
                     </div>
                 </div>
-                <div class="container-recursos">
+
+            </div>
+            <div class="responsable-recursos">
+                <div class="container-responsable">
+                 
+                    <div class="responsable">
+                        <div class="responsable__description" style="text-align: left;">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="assets/perfil.png" alt="" width="100%">
+                                </div>
+                                <div class="col-9 pt-2">
+                                    <p style="font-weight: bold; color: black; margin-bottom: 5px;">Mg. Diana Lidia Sanchez Torpoco</p>
+                                    <p style="font-weight: bold;padding: 0; color: darkseagreen;">Responsable</p>
+                                </div>
+                            </div>                            
+                            <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
+                            <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo@upeu.edu.pe</p>
+                            <div class="row justify-content-center mt-4">
+                                <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--     <div class="container-recursos">
                     <div class="row">
                         <div class="col-9 d-flex container-recursos__title">
                             <p style="margin: 0;">Recursos</p> 
@@ -94,34 +120,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
-            <div class="times">
-                <div class="times__title mt-3">
-                    <h4 style="color: #F8A900; text-align: center; font-family: Roboto; font-weight: 700; font-size: 18px;">Horas completadas</h4>
-                </div>
-                <div class="times__description mt-4">
-                    <p style="text-align: center; font-weight: 700;">Aqui se muestra el avance en el cumplimiento de tus horas de Proyección Social</p>
-                </div>
-                <div class="chart">
-                    <app-chart-circle [color]="'#003366'"></app-chart-circle>
-                </div>
-                <div class="times__hours mt-2">
-                    <div class="row">
-                        <div class="col-6">
-                            <p style="text-align: center; font-weight: 800; color: rgba(0, 51, 102, 1); margin: 0;" class="text-4">Total Horas</p>
-                            <p style="text-align: center;">50 Hrs.</p>
-                        </div>
-                        <div class="col-6">
-                            <p style="text-align: center; font-weight: 800; color: rgba(0, 51, 102, 1); margin: 0;" class="text-4">Horas Completadas</p>
-                            <p style="text-align: center;">25 Hrs.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+          
             
             
         </div>
     </article>
-</section>
