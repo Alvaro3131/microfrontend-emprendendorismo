@@ -1,0 +1,27 @@
+.title-image{
+    color: white;
+    font-weight: 800;
+    font-family: 'Roboto';
+    font-size: 48px;
+}
+.img{
+    background-size: cover;
+    margin: 0 auto;
+    min-height: 130px;
+    border-radius: 10px;
+}
+.panel__info{
+    padding-left: 90px;
+    padding-right: 90px;
+}
+button{
+    height: 50px;
+    width: 100%;
+}
+button{
+    color: #6B788E !important;
+}
+button.active{
+    background-color: #063D58 !important;
+    color: white !important;
+}

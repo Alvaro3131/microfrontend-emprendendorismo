@@ -11,11 +11,12 @@ const routes: Routes = [
     path:'', component: StudentComponent,children: [
       { path: '', component: InfoStudentComponent},
       { path: 'tutoria', component: TutorshipsComponent},
+      {
+        path: 'vinculacion', component: VinculacionPanelComponent
+      },
     ]
   },
-  {
-    path: 'vinculacion', component: VinculacionPanelComponent
-  },
+  
   {
     path:'**', redirectTo:''
   },

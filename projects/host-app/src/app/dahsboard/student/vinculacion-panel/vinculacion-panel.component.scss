@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .panel{
   width: 100%;
@@ -56,7 +54,7 @@ a:hover{
 }
 
 .container-proyection__title {
-  background-color: rgba(0, 51, 102, 1);
+  background-color: #3E98B6;
   color: white;
   border-radius: 5px;
   padding: 8px;
@@ -242,6 +240,11 @@ a:hover{
 
 .times__description {
   color: #003366;
+  font-family: Libre Franklin;
+  font-size: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  
 }
 
 .chart{
