@@ -11,7 +11,7 @@ import { NextProjectionComponent } from './next-projection/next-projection.compo
 import { VinculacionPanelComponent } from './vinculacion-panel/vinculacion-panel.component';
 import { StudentComponent } from './student.component';
 import { TutorshipsComponent } from './tutorships/tutorships.component';
-
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import { TutorshipsComponent } from './tutorships/tutorships.component';
     StudentRoutingModule,
     HeaderStudentComponent,
     ChartCircleComponent,
+    NgCircleProgressModule.forRoot(),
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
