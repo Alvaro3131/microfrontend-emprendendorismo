@@ -1,0 +1,69 @@
+.title-image{
+    color: white;
+    font-weight: 800;
+    font-family: 'Roboto';
+    font-size: 48px;
+}
+.img{
+    background-size: cover;
+    margin: 0 auto;
+    min-height: 130px;
+    border-radius: 10px;
+}
+
+.btn-add-psicologo {
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #063D58;
+}
+
+button{
+    height: 50px;
+    width: 100%;
+}
+button{
+    color: #6B788E !important;
+}
+button.active{
+    background-color: #063D58 !important;
+    color: white !important;
+}
+
+  .panel__info{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .panel{
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+    box-shadow:  20px 20px 23px #d5d5d5,
+    -20px -20px 23px #ebebeb;
+    height: 55vh;
+  }
+  .panel-light{
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+    box-shadow:  20px 20px 23px #d5d5d5,
+    -20px -20px 23px #ebebeb;
+  }
+  .panel-extra{
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+    box-shadow:  20px 20px 23px #d5d5d5,
+    -20px -20px 23px #ebebeb;
+    height: 26vh;
+  }
+  .title-card{
+    position: absolute; background-color: #3E98B6; height: 50px;
+                  ; top: -25px; left: 15px; border-radius: 5px; color:white; width: 254px; text-align: center; font-weight: bold;
+                  z-index: 100;
+  }
+  .title-card-special{
+    position: absolute; background-color: #3E98B6; height: 50px;
+                  ; top: -16px; left: -13px; border-radius: 5px; color:white; width: 254px; text-align: center; font-weight: bold;
+                  z-index: 100;
+  }
+  .principal{
+    height: 60vh;
+  }
