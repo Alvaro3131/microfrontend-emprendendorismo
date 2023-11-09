@@ -1,127 +1,68 @@
-<section class="panel">
-    <article class="panel__header">
-      <app-header-student></app-header-student>
-    </article>
+
     <article class="panel__info">
         <div class="d-flex justify-content-center align-items-center img" style="background-image: url('/assets/fondo-vinculacion.png');">
             <p class="title-image">Vinculación con el medio</p>
         </div>
-        <div class="main d-flex mt-3">
-            <div class="container-proyection">
-                <div class="row">
-                    <div class="col-9 d-flex container-proyection__title">
-                        <p style="margin: 0;">Próxima Proyección Social</p> 
+        <div class="row d-flex justify-content-center align-items-center pt-5" >
+            <div class="col-lg-4 col-md-6 pe-5 ps-4 principal" style="position: relative;">
+                <div class="title-card d-flex justify-content-center align-items-center">Proxima Proyección Social</div>
+                <div class="panel">
+                    <div class=" d-flex justify-content-center w-100 pt-4" style="height: 70%;">
+                        <img src="assets/campaña.jpg" alt="" width="65%" >
                     </div>
-                    <div class="col-3"></div>
+                    <div class="p-3" style="height: 30%; background-color: #F9F7FE ;">
+                        <div class="row p-3">
+                            <div class="col-lg-6 col-12 mt-2">
+                                <strong><i class="fa-solid fa-calendar-days me-1"></i>Fecha:</strong> 20/10/2021
+                            </div>
+                            <div class="col-lg-6 col-12 mt-2">
+                                <strong><i class="fa-regular fa-clock me-1"></i>Hora:</strong> 10:00 A.M
+                            </div>
+                            <div class="col-12 mt-2">
+                                <strong><i class="fa-solid fa-location-dot me-1"></i>Lugar:</strong> Mansión de la UpeU
+                            </div>
+                        </div>
                 </div>
-                <div class="proyection">
-                    <div class="proyection__title mt-3">
-                        <h4 style="color: rgba(0, 51, 102, 1); text-align: center; font-family: Roboto; font-weight: 700; font-size: 18px;">¡Salvemos el mundo!</h4>
-                    </div>
-                    <div class="container-hours">
-                        <div class="description">
-                          <span>Quedan</span>
-                        </div>
-                        <div class="description-hour">
-                          <div class="hour">
-                            <div class="hour__time">
-                              <span>08</span>
-                              <p>Dias</p>
-                            </div>
-                            <div class="hour__time">
-                              <span>05</span>
-                              <p>Horas</p>
-                            </div>
-                            <div class="hour__time">
-                              <span>02</span>
-                              <p>Minutos</p>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="proyection__info">
-                        <div class="row mt-4">
-                            <div class="col-6">
-                                <p class="text-4"> <strong>Fecha:</strong> 02/10/2023</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="text-4"> <strong>Hora:</strong> 10:00 AM</p>
-                            </div>
-                        </div>
-                        <p class="text-4"><strong>Lugar:</strong> Colegio San Román - Av. La Paz 456</p>
-                        <p style="text-align: center;">Proyección dirigido a todos los estudiantes sin importar el ciclo.</p>
-                    </div>
-                    <div class="proyection__button">
-                        <button class="btn btn-success mt-2" style="border: none; background-color: #F8A900; color: white; width: 100%;" type="button"><strong>Participar</strong></button>
-                    </div>
                 </div>
             </div>
-                
-            <div class="responsable-recursos">
-                <div class="container-responsable">
-                    <div class="row">
-                        <div class="col-9 d-flex container-responsable__title">
-                            <p style="margin: 0;">Responsable</p> 
-                        </div>
-                        <div class="col-3"></div>
-                    </div>
-                    <div class="responsable">
-                        <div class="responsable__description" style="text-align: left;">
-                            <p style="font-weight: bold;">Mg. Diana Lidia Sanchez Torpoco</p>
-                            <p style="margin-bottom: 4px;"><strong>Área:</strong> Coord. Vinculación con el medio</p>
-                            <p style="margin-bottom: 4px;"><strong>Celular:</strong> 987654321</p>
-                            <p style="margin-bottom: 4px;"><strong>Correo:</strong> Correo@upeu.edu.pe</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-recursos">
-                    <div class="row">
-                        <div class="col-9 d-flex container-recursos__title">
-                            <p style="margin: 0;">Recursos</p> 
-                        </div>
-                        <div class="col-3"></div>
-                    </div>
-                    <div class="recursos">
-                        <div class="recursos__info">
-                            <p style="text-align: center;">Documentos para el desarrollo</p>
-                        </div>
-                        <div class="recursos__buttons">
-                            <div class="recursos__buttons--button">
-                                <p style="margin: 0;">Guia del taller</p>
-                            </div>
-                            <div class="recursos__buttons--button">
-                                <p style="margin: 0;">Lista de Materiales</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="times">
-                <div class="times__title mt-3">
-                    <h4 style="color: #F8A900; text-align: center; font-family: Roboto; font-weight: 700; font-size: 18px;">Horas completadas</h4>
-                </div>
-                <div class="times__description mt-4">
-                    <p style="text-align: center; font-weight: 700;">Aqui se muestra el avance en el cumplimiento de tus horas de Proyección Social</p>
-                </div>
-                <div class="chart">
-                    <app-chart-circle [color]="'#003366'"></app-chart-circle>
-                </div>
-                <div class="times__hours mt-2">
-                    <div class="row">
-                        <div class="col-6">
-                            <p style="text-align: center; font-weight: 800; color: rgba(0, 51, 102, 1); margin: 0;" class="text-4">Total Horas</p>
-                            <p style="text-align: center;">50 Hrs.</p>
+            <div class="col-lg-4 col-md-6 pe-5 ps-4 principal" >
+                <div class="panel d-flex flex-column align-items-center justify-content-center">
+                    <p class="fw-bold" style="font-size: 30px; color: #EDA619;">Horas Completadas</p>
+                    <p class="text-center" style="color:#063E59">Aqui se muestra el avance en el <br> cumplimiento de tus horas de <br> Proyección Social</p>
+                    <circle-progress [percent]="50" [radius]="100" [space]="-16" [outerStrokeWidth]="17"
+                    [outerStrokeColor]="'#EDA619'" [innerStrokeWidth]="17" [innerStrokeColor]="'#AFAFAF'"
+                    [title]="50+'%'" [titleFontSize]="'35'" [titleFontWeight]="'700'"
+                    [titleColor]="'#1B447D'" [showUnits]="false" [showSubtitle]="false" [showUnits]="false"
+                    [clockwise]="true" [startFromZero]="false"></circle-progress>
+                    <div class="row w-100" >
+                        <div class="col-6" >
+                            <p style="text-align: center; font-weight: bold; color: rgba(0, 51, 102, 1); margin: 0;" class="text-4">Total Horas</p>
+                            <p style="text-align: center; color: #3E98B6; font-weight: bold;">50 Hrs.</p>
                         </div>
                         <div class="col-6">
-                            <p style="text-align: center; font-weight: 800; color: rgba(0, 51, 102, 1); margin: 0;" class="text-4">Horas Completadas</p>
-                            <p style="text-align: center;">25 Hrs.</p>
+                            <p style="text-align: center; font-weight: bold; color: rgba(0, 51, 102, 1); margin: 0;" class="text-4">Horas Completadas</p>
+                            <p style="text-align: center; color: #3E98B6; font-weight: bold;">25 Hrs.</p>
                         </div>
                     </div>
                 </div>
-
             </div>
-            
-            
+            <div class="col-lg-4 col-md-6 pe-5 ps-4 principal"  >
+                <div class="panel-light p-4">
+                    <div class="row">
+                        <div class="col-3 ps-4 pt-2">
+                            <img src="assets/perfil.png" alt="" width="95%">
+                        </div>
+                        <div class="col-9 pt-2">
+                            <p style="font-weight: bold; color: black; margin-bottom: 5px;">Mg. Diana Lidia Sanchez Torpoco</p>
+                            <p style="font-weight: bold;padding: 0; color: darkseagreen;">Responsable</p>
+                        </div>
+                    </div>                            
+                    <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
+                    <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo@upeu.edu.pe</p>
+                    <div class="row justify-content-center mt-4 w-100">
+                        <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6; width: 300px;"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </article>
-</section>
