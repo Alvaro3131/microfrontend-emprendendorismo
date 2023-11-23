@@ -38,12 +38,18 @@ dependencies:
   '@popperjs/core':
     specifier: ^2.11.8
     version: 2.11.8
+  angular-calendar:
+    specifier: ^0.31.0
+    version: 0.31.0(@angular/core@16.2.4)
   bootstrap:
     specifier: ^5.3.1
     version: 5.3.1(@popperjs/core@2.11.8)
   chart.js:
     specifier: ^4.4.0
     version: 4.4.0
+  date-fns:
+    specifier: ^2.30.0
+    version: 2.30.0
   ng-circle-progress:
     specifier: ^1.7.1
     version: 1.7.1(@angular/common@16.2.4)(@angular/core@16.2.4)(rxjs@7.8.1)
@@ -1793,7 +1799,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
-    dev: true
 
   /@babel/template@7.22.15:
     resolution: {integrity: sha512-QPErUVm4uyJa60rkI73qneDacvdvzxshT3kksGqlGWYdOTIUOwJ7RDUL8sGqslY1uXWSL6xMFKEXDS3ox2uF0w==}
@@ -2112,6 +2117,10 @@ packages:
     resolution: {integrity: sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==}
     dev: true
 
+  /@mattlewis92/dom-autoscroller@2.4.2:
+    resolution: {integrity: sha512-YbrUWREPGEjE/FU6foXcAT1YbVwqD/jkYnY1dFb0o4AxtP3s4xKBthlELjndZih8uwsDWgQZx1eNskRNe2BgZQ==}
+    dev: false
+
   /@ng-bootstrap/ng-bootstrap@15.1.1(@angular/common@16.2.4)(@angular/core@16.2.4)(@angular/forms@16.2.4)(@angular/localize@16.2.9)(@popperjs/core@2.11.8)(rxjs@7.8.1):
     resolution: {integrity: sha512-nZlIMMggtI3IHkGs0XPrUIUdpeEzQvfGV9M4I9IvCqiS2n4RwWoUvWK1ICo4csZqFNBDlCQx956gO6ZZUSL2mw==}
     peerDependencies:
@@ -2228,6 +2237,11 @@ packages:
 
   /@popperjs/core@2.11.8:
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+    dev: false
+
+  /@scarf/scarf@1.3.0:
+    resolution: {integrity: sha512-lHKK8M5CTcpFj2hZDB3wIjb0KAbEOgDmiJGDv1WBRfQgRm/a8/XMEkG/N1iM01xgbUDsPQwi42D+dFo1XPAKew==}
+    requiresBuild: true
     dev: false
 
   /@schematics/angular@16.2.1:
@@ -2773,6 +2787,39 @@ packages:
       uri-js: 4.4.1
     dev: true
 
+  /angular-calendar@0.31.0(@angular/core@16.2.4):
+    resolution: {integrity: sha512-QGPObUmOYLr4IeSaj1pzZjcycN6otYx+SbeezJuujstXR9f2wo4CtMlBQ+SU+ZF5VFfrdYge8qkxMGCLBLBRrw==}
+    peerDependencies:
+      '@angular/core': '>=15.0.0'
+    dependencies:
+      '@angular/core': 16.2.4(rxjs@7.8.1)(zone.js@0.13.1)
+      '@scarf/scarf': 1.3.0
+      angular-draggable-droppable: 8.0.0(@angular/core@16.2.4)
+      angular-resizable-element: 7.0.2(@angular/core@16.2.4)
+      calendar-utils: 0.10.4
+      positioning: 2.0.1
+      tslib: 2.6.2
+    dev: false
+
+  /angular-draggable-droppable@8.0.0(@angular/core@16.2.4):
+    resolution: {integrity: sha512-+gpSNBbygjV1pxTxsM3UPJKcXHXJabYoTtKcgQe74rGnb1umKc07XCBD1qDzvlG/kocthvhQ12qfYOYzHnE3ZA==}
+    peerDependencies:
+      '@angular/core': '>=15.0.0'
+    dependencies:
+      '@angular/core': 16.2.4(rxjs@7.8.1)(zone.js@0.13.1)
+      '@mattlewis92/dom-autoscroller': 2.4.2
+      tslib: 2.6.2
+    dev: false
+
+  /angular-resizable-element@7.0.2(@angular/core@16.2.4):
+    resolution: {integrity: sha512-/BGuNiA38n9klexHO1xgnsA3VYigj9v+jUGjKtBRgfB26bCxZKsNWParSu2k3EqbATrfAJC4Nl8f7cORpJFf4w==}
+    peerDependencies:
+      '@angular/core': '>=15.0.0'
+    dependencies:
+      '@angular/core': 16.2.4(rxjs@7.8.1)(zone.js@0.13.1)
+      tslib: 2.6.2
+    dev: false
+
   /ansi-colors@4.1.3:
     resolution: {integrity: sha512-/6w/C21Pm1A7aZitlI5Ni/2J6FFQN8i1Cvz3kHABAAbw93v/NlvKdVOqz7CCWz/3iv/JplRSEEZ83XION15ovw==}
     engines: {node: '>=6'}
@@ -3107,6 +3154,10 @@ packages:
       tar: 6.2.0
       unique-filename: 3.0.0
     dev: true
+
+  /calendar-utils@0.10.4:
+    resolution: {integrity: sha512-gBK4xCJ42yjaUKwuUha6cZOfxAmGzvSgbdAaX3xLRioeKbYoOK1x1qeD6dch72rsMZlTgATPbBBx42bnkStqgQ==}
+    dev: false
 
   /call-bind@1.0.2:
     resolution: {integrity: sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==}
@@ -3527,6 +3578,13 @@ packages:
       whatwg-mimetype: 2.3.0
       whatwg-url: 8.7.0
     dev: true
+
+  /date-fns@2.30.0:
+    resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
+    engines: {node: '>=0.11'}
+    dependencies:
+      '@babel/runtime': 7.22.6
+    dev: false
 
   /date-format@4.0.14:
     resolution: {integrity: sha512-39BOQLs9ZjKh0/patS9nrT8wc3ioX3/eA/zgbKNopnF2wCqJEoxywwwElATYvRsXdnOxA/OQeQoFZ3rFjVajhg==}
@@ -6057,6 +6115,10 @@ packages:
     hasBin: true
     dev: false
 
+  /positioning@2.0.1:
+    resolution: {integrity: sha512-DsAgM42kV/ObuwlRpAzDTjH9E8fGKkMDJHWFX+kfNXSxh7UCCQxEmdjv/Ws5Ft1XDnt3JT8fIDYeKNSE2TbttA==}
+    dev: false
+
   /postcss-loader@7.3.3(postcss@8.4.27)(typescript@5.1.6)(webpack@5.88.2):
     resolution: {integrity: sha512-YgO/yhtevGO/vJePCQmTxiaEwER94LABZN0ZMT4A0vsak9TpO+RvKRs7EmJ8peIlB9xfXCsS7M8LjqncsUZ5HA==}
     engines: {node: '>= 14.15.0'}
@@ -6314,7 +6376,6 @@ packages:
 
   /regenerator-runtime@0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
-    dev: true
 
   /regenerator-transform@0.15.2:
     resolution: {integrity: sha512-hfMp2BoF0qOk3uc5V20ALGDS2ddjQaLrdl7xrGXvAIow7qeWRM2VA2HuCHkUKk9slq3VwEwLNK3DFBqDfPGYtg==}

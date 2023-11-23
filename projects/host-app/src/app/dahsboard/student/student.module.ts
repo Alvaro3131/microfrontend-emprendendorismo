@@ -12,6 +12,9 @@ import { VinculacionPanelComponent } from './vinculacion-panel/vinculacion-panel
 import { StudentComponent } from './student.component';
 import { TutorshipsComponent } from './tutorships/tutorships.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,10 +27,15 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     StudentRoutingModule,
     HeaderStudentComponent,
     ChartCircleComponent,
     NgCircleProgressModule.forRoot(),
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
