@@ -32,14 +32,15 @@ button.active{
     border: 1px solid #E0E0E0;
     box-shadow:  20px 20px 23px #d5d5d5,
     -20px -20px 23px #ebebeb;
-    height: 55vh;
+    height: 65vh;
   }
   .panel-light{
     border-radius: 10px;
     border: 1px solid #E0E0E0;
     box-shadow:  20px 20px 23px #d5d5d5,
     -20px -20px 23px #ebebeb;
-    height: 30vh;
+    min-height: 40vh;
+    max-height: 50vh;
   }
   .panel-extra{
     border-radius: 10px;
@@ -61,3 +62,71 @@ button.active{
   .principal{
     height: 60vh;
   }
+
+
+  .buttons{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    color: white;
+  }
+
+.buttons> button{
+  width: 100px;
+  color: red !important;
+  border: 1px solid red;
+}
+
+.btn-actualizar{
+  background-color: #063D58 !important;
+  top: -90px;
+  color: #ffff !important;
+}
+
+
+.btn--delete{
+  color: red !important;
+  width: 100px;
+  border: 1px solid red;
+}
+
+.btn--edit{
+  color: #063D58 !important;
+  width: 100px;
+  border: 1px solid #063D58;
+}
+
+.modal-header {
+    background: rgba(6, 61, 88, 0.84);
+    padding: 25px;
+    color: white;
+}
+
+.modal-body {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.col-form-label {
+    font-weight: bold;
+}
+
+.btn-registrar {
+    border-radius: 10px;
+    background: rgba(6, 61, 88, 0.84);
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.btn-cancelar {
+    border-radius: 10px;
+    border-color: transparent;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: black;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}

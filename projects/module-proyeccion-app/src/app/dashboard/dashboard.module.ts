@@ -7,10 +7,12 @@ import { CardViewHoursComponent } from './card-view-hours/card-view-hours.compon
 import { PersonsProyeccionComponent } from './persons-proyeccion/persons-proyeccion.component';
 import { NextProyectionComponent } from './next-proyection/next-proyection.component';
 import { SharedModule } from '../shared/shared.module';
+import { NewProyeccionComponent } from './new-proyeccion/new-proyeccion.component';
+import { ConteinAddProyectoComponent } from './contein-add-proyecto/contein-add-proyecto.component';
 
 
 @NgModule({
-  declarations: [DahsboardComponent, CardViewHoursComponent, PersonsProyeccionComponent, NextProyectionComponent], // declare the component here
+  declarations: [DahsboardComponent, CardViewHoursComponent, PersonsProyeccionComponent, NextProyectionComponent, NewProyeccionComponent, ConteinAddProyectoComponent,], // declare the component here
   imports: [
     CommonModule,
     DashboardRoutingModule,
