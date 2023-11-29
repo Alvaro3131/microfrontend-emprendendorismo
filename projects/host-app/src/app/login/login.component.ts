@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from '../services/persona.service';
 
 @Component({
   selector: 'app-login',
@@ -9,10 +10,17 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   isLoginTeacher:boolean=false;
   user:string='';
-  constructor(private router:Router){}
+  constructor(private router:Router, private authService:AuthService){}
 
   login(){
-    this.router.navigate(['./dashboard/student'])
+    this.authService.loginStudent(this.user).subscribe((res:any)=>{
+      console.log(res);
+      if(res.data.token){
+        sessionStorage.setItem('token',res.data.token);
+        sessionStorage.setItem('code',this.user);
+        this.router.navigate(['./dashboard/student'])
+      }
+    })
   }
   loginTeacher(){
     if(this.user=='asin'){

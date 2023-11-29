@@ -4,7 +4,6 @@ import { addDays, getHours, setHours, setMinutes, startOfWeek } from 'date-fns';
 import { Subject } from 'rxjs';
 @Component({
   templateUrl: './tutorships.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['./tutorships.component.scss']
 })
 export class TutorshipsComponent {
@@ -18,7 +17,8 @@ export class TutorshipsComponent {
   events: CalendarEvent[] = [];
 
   refresh = new Subject<void>();
-
+  startHour = 8;
+  endHour = 11;
   eventTimesChanged({
     event,
     newStart,
@@ -30,6 +30,8 @@ export class TutorshipsComponent {
   }
 
   generateWeeklyEvents() {
+    this.endHour= 13;
+    this.startHour= 8;
     const today = new Date();
     const nextYear = new Date(today.getFullYear() + 1, 0, 1); // Genera eventos para el próximo año
 
@@ -49,5 +51,34 @@ export class TutorshipsComponent {
       currentDay = addDays(currentDay, 1); // Avanza al próximo día
     }
   }
+  generateWeeklyEventschange() {
+    this.endHour= 17;
+    this.startHour= 13;
+    this.events = [];
+    const today = new Date();
+    const nextYear = new Date(today.getFullYear() + 1, 0, 1); // Genera eventos para el próximo año
   
+    let currentDay = startOfWeek(today, { weekStartsOn: 0 }); // Inicia en el próximo domingo
+    while (currentDay < nextYear) {
+      if (currentDay.getDay() === 2) { // Martes (2)
+        const eventStart = setHours(setMinutes(currentDay, 0), 15); // Martes a las 3:00 PM
+        const eventEnd = setHours(setMinutes(currentDay, 0), 17); // Martes a las 5:00 PM
+  
+        const event: CalendarEvent = {
+          start: eventStart,
+          end: eventEnd,
+          title: 'Sistemas Operativos', // Puedes cambiar el título aquí si es necesario
+          resizable: {
+            afterEnd: true,
+          },
+        };
+        this.events.push(event);
+      }
+      currentDay = addDays(currentDay, 1); // Avanza al próximo día
+    }
+  }
+  abrirWhatsApp() {
+    const whatsappURL = 'https://api.whatsapp.com/send/?phone=51981131748&text&type=phone_number&app_absent=0';
+    window.open(whatsappURL, '_blank');
+  }
 }

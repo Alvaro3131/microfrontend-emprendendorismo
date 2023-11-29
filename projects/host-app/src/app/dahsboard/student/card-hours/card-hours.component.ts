@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-hours',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-hours.component.scss']
 })
 export class CardHoursComponent {
-
+  @Input() percent: number=33;
+  @Input() title: string='';
+  @Input() titleHours: string='';
 }

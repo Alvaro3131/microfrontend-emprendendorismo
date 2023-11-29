@@ -1,6 +1,6 @@
 <main class="main">
   <section class="student student--sizeTitle">
-    <h2 class="student__name">Hola Luis Elvis!</h2>
+    <h2 class="student__name">Hola {{name}}!</h2>
   </section>
   <section class="student student--sizeInfo">
     <!-- Proxima proyeccion -->
@@ -9,12 +9,12 @@
     </div>
     <!-- Horas de PPP -->
     <div class="student__ppp">
-      <app-card-hours></app-card-hours>
+      <app-card-hours [title]="'Prácticas Pre Profesionales'" [titleHours]="'Horas de PPP'" [percent]="50"></app-card-hours>
     </div>
     <!-- Horas de Proyeccion -->
     <div class="student__proyection">
-      <app-card-hours></app-card-hours>
+      <app-card-hours [title]="'Proyección Social'" [titleHours]="'Horas de PS'" [percent]="30"></app-card-hours>
     </div>
   </section>
-  <button type="button" class="button button--float">Programar nueva proyeccion social</button>
+  <button type="button" class="button button--float" [routerLink]="'/login'">Salir o consultar otro código</button>
 </main>
