@@ -67,3 +67,26 @@ button.active{
   .principal{
     height: 60vh;
   }
+
+.btn-wsp {
+  border: 2px solid #009B72; 
+  color: #009B72 !important;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-eliminar {
+  border: 2px solid #FF3636;
+  color: #FF3636 !important;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  min-width: 100px;
+}
+
+.btn-editar {
+  border: 2px solid #3E98B6;
+  color: #3E98B6 !important;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  min-width: 100px;
+}

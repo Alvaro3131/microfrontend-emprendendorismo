@@ -96,7 +96,7 @@
                     </div>
 
                     <div class="row d-flex justify-content-center align-items-center pt-5" >
-                        <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
+                        <div *ngFor="let p of psicologos" class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
                             <div class="title-card d-flex justify-content-center align-items-center">Psicólogo Disponible</div>
                             <div class="panel-light p-4 pt-5">
                                 <div class="row">
@@ -104,56 +104,21 @@
                                         <img src="assets/perfil.png" alt="" width="100%">
                                     </div>
                                     <div class="col-9 pt-2">
-                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Juan Sanches Gutierrez</p>
+                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">{{p.name}}</p>
                                         <p style="font-weight: bold;padding: 0; color: darkseagreen;">Psicólogo E.P. Sistemas</p>
                                     </div>
                                 </div>
-                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
-                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
+                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> {{p.phone}}</p>
+                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> {{p.email}}</p>
                                 <div class="row justify-content-center mt-4">
-                                    <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
+                                    <button (click)="redirigirAWsp(p.phone!)" class="btn btn-wsp"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsapp</button>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
-                                        </div>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="mt-4">
+                                        <button class="btn btn-eliminar" (click)="eliminarPsicologo(p.id!)">Eliminar</button>
                                     </div>
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
-                            <div class="title-card d-flex justify-content-center align-items-center">Psicólogo Disponible</div>
-                            <div class="panel-light p-4 pt-5">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="assets/perfil.png" alt="" width="100%">
-                                    </div>
-                                    <div class="col-9 pt-2">
-                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Juan Sanches Gutierrez</p>
-                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Psicólogo E.P. Sistemas</p>
-                                    </div>
-                                </div>
-                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
-                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
-                                <div class="row justify-content-center mt-4">
-                                    <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
-                                        </div>
+                                    <div class="mt-4">
+                                        <button class="btn btn-editar" data-bs-toggle="modal" data-bs-target="#editPsicologoModal" (click)="editPsico(p.id!, p.name!, p.phone!, p.email!, p.type_person!)">Editar</button>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +132,7 @@
                     </div>
 
                     <div class="row d-flex justify-content-center align-items-center pt-5" >
-                        <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
+                        <div *ngFor="let a of asesores" class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
                             <div class="title-card d-flex justify-content-center align-items-center">Asesor Disponible</div>
                             <div class="panel-light p-4 pt-5">
                                 <div class="row">
@@ -175,25 +140,21 @@
                                         <img src="assets/perfil.png" alt="" width="100%">
                                     </div>
                                     <div class="col-9 pt-2">
-                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Pr. Juan Ticona García</p>
+                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Pr. {{a.name}}</p>
                                         <p style="font-weight: bold;padding: 0; color: darkseagreen;">Capellán E.P. Sistemas</p>
                                     </div>
                                 </div>
-                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
-                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
+                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> {{a.phone}}</p>
+                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> {{a.email}}</p>
                                 <div class="row justify-content-center mt-4">
-                                    <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
+                                    <button (click)="redirigirAWsp(a.phone!)" class="btn btn-wsp"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
-                                        </div>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="mt-4">
+                                        <button class="btn btn-eliminar" (click)="eliminarAsesor(a.id!)">Eliminar</button>
                                     </div>
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
-                                        </div>
+                                    <div class="mt-4">
+                                        <button class="btn btn-editar" data-bs-toggle="modal" data-bs-target="#editAsesorModal" (click)="editAsesor(a.id!, a.name!, a.phone!, a.email!, a.type_person!)">Editar</button>
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +164,7 @@
                 </div>
                 <div class="tab-pane fade" id="v-pills-configs" role="tabpanel" aria-labelledby="v-pills-configs-tab" tabindex="0">
                     <div class="d-flex flex-row-reverse">
-                        <div class="btn btn-info btn-add-psicologo" data-bs-toggle="modal" data-bs-target="#addClassmateModal">+  un nuevo Classmate</div>
+                        <div class="btn btn-info btn-add-psicologo" data-bs-toggle="modal" data-bs-target="#addClassmateModal">+ Añadir un nuevo Classmate</div>
                     </div>
 
                     <div class="row d-flex justify-content-center align-items-center pt-5" >
@@ -222,18 +183,14 @@
                                 <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
                                 <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Salón:</strong> Laboratorio Cisco</p>
                                 <div class="row justify-content-center mt-4">
-                                    <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
+                                    <button class="btn btn-wsp"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
-                                        </div>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="mt-4">
+                                        <button class="btn btn-eliminar">Eliminar</button>
                                     </div>
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
-                                        </div>
+                                    <div class="mt-4">
+                                        <button class="btn btn-editar">Editar</button>
                                     </div>
                                 </div>
                             </div>
@@ -332,18 +289,14 @@
                                 <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
                                 <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
                                 <div class="row justify-content-center mt-4">
-                                    <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
+                                    <button class="btn btn-wsp"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
-                                        </div>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="mt-4">
+                                        <button class="btn btn-eliminar">Eliminar</button>
                                     </div>
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
-                                        </div>
+                                    <div class="mt-4">
+                                        <button class="btn btn-editar">Editar</button>
                                     </div>
                                 </div>
                             </div>
@@ -363,18 +316,14 @@
                                 <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
                                 <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
                                 <div class="row justify-content-center mt-4">
-                                    <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
+                                    <button class="btn btn-wsp"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
-                                        </div>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="mt-4">
+                                        <button class="btn btn-eliminar">Eliminar</button>
                                     </div>
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
-                                        </div>
+                                    <div class="mt-4">
+                                        <button class="btn btn-editar">Editar</button>
                                     </div>
                                 </div>
                             </div>
@@ -389,7 +338,41 @@
 </article>
 
 
-<app-add-psicologo></app-add-psicologo>
-<app-add-asesor-espiritual></app-add-asesor-espiritual>
-<app-add-classmate></app-add-classmate>
-<app-add-tutor></app-add-tutor>
+<app-add-psicologo
+(volveraListarPsicologos)="getPsicologos2daVez($event)">
+</app-add-psicologo>
+
+<app-edit-psicologo
+[id_psicologo]="idPsico"
+[name_edit2]="namePsico"
+[apepat_edit2]="apepatPsico"
+[apemat_edit2]="apematPsico"
+[email_edit2]="emailPsico"
+[phone_edit2]="phonePsico"
+[type_person_edit2]="type_personPsico"
+(volveraListarPsicologos)="getPsicologos2daVez($event)">
+</app-edit-psicologo>
+
+<app-add-asesor-espiritual
+(volveraListarAsesores)="getAsesores2daVez($event)">
+</app-add-asesor-espiritual>
+
+<app-edit-asesor-espiritual
+[id_asesor]="idAsesor"
+[name_edit1]="nameAsesor"
+[apepat_edit1]="apepatAsesor"
+[apemat_edit1]="apematAsesor"
+[email_edit1]="emailAsesor"
+[phone_edit1]="phoneAsesor"
+[type_person_edit1]="type_personAsesor"
+(volveraListarAsesores)="getAsesores2daVez($event)">
+</app-edit-asesor-espiritual>
+
+<app-add-classmate
+>
+</app-add-classmate>
+
+<app-add-tutor
+>
+</app-add-tutor>
+

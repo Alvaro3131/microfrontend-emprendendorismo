@@ -15,9 +15,9 @@ export class PsicologiaService {
   );
   
   private agregarAuthorizationHeader(){
-    let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwZXJzb25Db2RlIjoiMjAyMDEwMzk4IiwiaWF0IjoxNzAwNzA0MzM3LCJleHAiOjE3MDA3MDc5Mzd9.9-Vjx7yTOBSEdlQ7nivX1k4spJSBVYJk9xAIvpYYu-s';
+    let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwZXJzb25Db2RlIjoiMjAyMDEwMzk4IiwiaWF0IjoxNzAxMjk4NjM4LCJleHAiOjE3MDEzMDIyMzh9.JERHevaoaq7kGAwUhcqKgkDAh2yK8trI0s_4srKT4AE';
     if(token!=null){
-      return this.httpHeaders.append('Authorization',token);
+      return this.httpHeaders.append('auth-token',token);
     }
     return this.httpHeaders;
   }
@@ -36,15 +36,19 @@ export class PsicologiaService {
     return this.http.post<any>(`${apiURL}/psicologia/create`, psicologo, {headers: this.agregarAuthorizationHeader()});
   }
 
-  editarPsicologo(id_psicologo:number, name:any, phone:any, email:any, type_person:any): Observable<any> {
+  editarPsicologo(id_psicologo:number, name:string, phone:string, email:string, type_person:string): Observable<any> {
     return this.http.put<any>(`${apiURL}/psicologia/${id_psicologo}`, 
-    { name:name },
-    
+    {
+      name:name,
+      phone:phone,
+      email:email,
+      type_person:type_person
+    },
     {headers: this.agregarAuthorizationHeader()});
   }
 
   deletePsicologo(id_psicologo:number): Observable<any> {
-    return this.http.delete<any>(`${apiURL}/psicologia/delete/${id_psicologo}`, {headers: this.agregarAuthorizationHeader()});
+    return this.http.delete<any>(`${apiURL}/psicologia/${id_psicologo}`, {headers: this.agregarAuthorizationHeader()});
   }
 
 }
