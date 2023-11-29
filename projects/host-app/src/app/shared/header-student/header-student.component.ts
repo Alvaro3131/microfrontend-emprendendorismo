@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./header-student.component.scss'],
 })
 export class HeaderStudentComponent {
-
+  @Input() name:string='';
   constructor(private router:Router){}
 
   navigateToVinculacion(){

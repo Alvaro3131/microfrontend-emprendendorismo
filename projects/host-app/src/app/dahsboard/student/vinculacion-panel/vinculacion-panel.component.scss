@@ -1,38 +1,85 @@
+.img{
+  background-size: cover;
+  margin: 0 auto;
+  height: 15%;
+  border-radius: 10px;
+}
 .title-image{
   color: white;
   font-weight: 800;
   font-family: 'Roboto';
   font-size: 48px;
 }
-.img{
-  background-size: cover;
-  margin: 0 auto;
-  min-height: 130px;
-  border-radius: 10px;
+.main{
+  height: 100%;
 }
-.panel__info{
+.content{
   padding-left: 4%;
   padding-right: 4%;
+  height: 100%;
 }
-.panel{
-  border-radius: 10px;
-  border: 1px solid #E0E0E0;
-  box-shadow:  20px 20px 23px #d5d5d5,
-  -20px -20px 23px #ebebeb;
-  height: 55vh;
+.target{
+  height: 500px;
 }
-.panel-light{
-  border-radius: 10px;
-  border: 1px solid #E0E0E0;
-  box-shadow:  20px 20px 23px #d5d5d5,
-  -20px -20px 23px #ebebeb;
-  height: 30vh;
+.target2{
+  width: 100%;
+  max-width: 470px;
+  height: 440px;
+  border-radius: 8px;
+  border: 2px solid var(--Stock, #F3F3F3);
+  background: #FFF;
 }
-.title-card{
-  position: absolute; background-color: #3E98B6; height: 50px;
-                ; top: -25px; left: 15px; border-radius: 5px; color:white; width: 254px; text-align: center; font-weight: bold;
-                z-index: 100;
+.target3{
+  width: 100%;
+  max-width: 370px;
+  height: 440px;
+  border-radius: 8px;
+  border: 2px solid var(--Stock, #F3F3F3);
+  background: #FFF;
+}
+.target4{
+  width: 100%;
+  height: 240px;
+  margin-top: 30px;
+  border-radius: 8px;
+  border: 2px solid var(--Stock, #F3F3F3);
+  background: #FFF;
 }
 .principal{
-  height: 60vh;
+  height: 80%;
+}
+.header{
+  position: relative;
+}
+.panel {
+  position: absolute;
+  top: 0; /* Coloca el panel en la parte superior del contenedor */
+  left: 0; /* Coloca el panel en el lado izquierdo del contenedor */
+  border-radius: 5px;
+  background: #3E98B6;
+  width: 254px;
+  height: 46.724px;
+  display: flex; /* Usa flexbox para centrar */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  color: white;
+  font-weight: bold;
+}
+.img2{
+  height: 65%;
+  width: 100%;
+  padding-top: 15px;
+}
+.info{
+  height: 35%;
+  width: 100%;
+  background: #F3F3F3;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+
+}
+
+@media screen and (max-width: 600px) {
+  .title-image {
+    font-size: 25px; /* Tamaño más pequeño para pantallas más pequeñas */
+  }
 }

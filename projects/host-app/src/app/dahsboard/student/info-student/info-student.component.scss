@@ -1,5 +1,7 @@
-.main{
-  background-image: url('/assets/background.jpg');
+.main {
+  position: relative;
+  /* Tu configuración de fondo existente */
+  background: url('/assets/fondo.jpeg'), lightgray 1.597px -39.417px / 99.942% 132.71% no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -7,6 +9,18 @@
   flex-direction: column;
   height: 100%;
 }
+
+/* Capa semi-transparente */
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad */
+}
+
 
 .student__name{
   font-size: 1.4rem;
@@ -24,10 +38,12 @@
 .student.student--sizeTitle{
   padding: 30px 10px;
   height: 20%;
+  position: relative;
 }
 
 .student.student--sizeInfo{
   height: 80%;
+  position: relative;
 }
 
 .student__ppp, .student__proyection{
