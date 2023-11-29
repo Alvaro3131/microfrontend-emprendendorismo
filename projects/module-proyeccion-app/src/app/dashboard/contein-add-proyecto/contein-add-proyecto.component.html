@@ -1,0 +1,104 @@
+<section class="p-4 ">
+  <div class="row d-flex justify-content-center align-items-center pt-5">
+    <div class="col-lg-4 col-md-6 pe-5 ps-4 principal" style="position: relative;">
+      <div class="position-relative">
+        <button class="btn  position-absolute btn-actualizar"><i class="fa-solid fa-plus"></i> Actualizar una nueva proyeccion social</button>
+      </div>
+      <div class="title-card d-flex justify-content-center align-items-center">Proxima Proyección Social</div>
+      <div class="panel">
+        <div class=" d-flex justify-content-center w-100 pt-4" style="height: 60%;">
+          <img src="assets/campaña.jpg" alt="" width="65%">
+        </div>
+        <div class="p-3" style="height: 30%; background-color: #F9F7FE ;">
+          <div class="row p-3">
+            <div class="col-lg-6 col-12 mt-2">
+              <strong><i class="fa-solid fa-calendar-days me-1"></i>Fecha:</strong> 20/10/2021
+            </div>
+            <div class="col-lg-6 col-12 mt-2">
+              <strong><i class="fa-regular fa-clock me-1"></i>Hora:</strong> 10:00 A.M
+            </div>
+            <div class="col-12 mt-2">
+              <strong><i class="fa-solid fa-location-dot me-1"></i>Lugar:</strong> Mansión de la UpeU
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="btn ">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 pe-5 ps-4 principal">
+      <div class="position-relative">
+        <button type="button" class="btn  position-absolute btn-actualizar" data-bs-toggle="modal" data-bs-target="#addProyeccion"><i class="fa-solid fa-plus"></i> Añadir un nuevo responsable</button>
+      </div>
+      <div class="panel-light p-4">
+        <div class="row">
+          <div class="col-3 ps-4 pt-2">
+            <img src="assets/perfil.png" alt="" width="95%">
+          </div>
+          <div class="col-9 pt-2">
+            <p style="font-weight: bold; color: black; margin-bottom: 5px;">Mg. Diana Lidia Sanchez Torpoco</p>
+            <p style="font-weight: bold;padding: 0; color: darkseagreen;">Responsable</p>
+          </div>
+        </div>
+        <p style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong>
+          987654321</p>
+        <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo@upeu.edu.pe</p>
+        <div class="row justify-content-center mt-4 w-100">
+          <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6; width: 300px;"><i
+              style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por
+            Whatsaap</button>
+        </div>
+         <div class="d-flex justify-content-evenly mt-3">
+            <button class="btn btn--delete">Eliminar</button>
+            <button class="btn btn--edit">Editar</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="modal fade" id="addProyeccion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Añadir un nuevo responsable</h1>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="col-form-label">Titulo:</label>
+              <input type="text" class="form-control" id="name" placeholder="Ingrese los nombres del psicológico">
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="ciclo" class="col-form-label">Fecha Inicio:</label>
+                        <input type="date" class="form-control" id="ciclo" placeholder="Ingrese el ciclo">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="aula" class="col-form-label">Hora:</label>
+                        <input type="number" class="form-control" id="aula" placeholder="Ingrese el aula de tutoría">
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="col-form-label">Lugar:</label>
+                <input type="email" class="form-control" id="correo" placeholder="Ingrese el correo electrónico">
+            </div>
+            <div class="mb-3">
+                <label for="nro-whatsapp" class="col-form-label"></label>
+                <input type="file" class="form-control" id="nro-whatsapp" placeholder="Ingrese el número de WhatsApp">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-end">
+          <button type="button" class="btn btn-secondary btn-cancelar w-25" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary btn-registrar w-25">Registrar</button>
+        </div>
+      </div>
+    </div>
+</div>
