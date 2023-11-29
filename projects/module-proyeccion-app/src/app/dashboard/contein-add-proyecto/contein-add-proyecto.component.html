@@ -2,14 +2,14 @@
   <div class="row d-flex justify-content-center align-items-center pt-5">
     <div class="col-lg-4 col-md-6 pe-5 ps-4 principal" style="position: relative;">
       <div class="position-relative">
-        <button class="btn  position-absolute btn-actualizar"><i class="fa-solid fa-plus"></i> Actualizar una nueva proyeccion social</button>
+        <button class="btn  position-absolute btn-actualizar" data-bs-toggle="modal" data-bs-target="#updateProyeccion"><i class="fa-solid fa-plus"></i> Actualizar una nueva proyeccion social</button>
       </div>
       <div class="title-card d-flex justify-content-center align-items-center">Proxima Proyección Social</div>
       <div class="panel">
         <div class=" d-flex justify-content-center w-100 pt-4" style="height: 60%;">
           <img src="assets/campaña.jpg" alt="" width="65%">
         </div>
-        <div class="p-3" style="height: 30%; background-color: #F9F7FE ;">
+        <div class="p-3" style="height: 30%;">
           <div class="row p-3">
             <div class="col-lg-6 col-12 mt-2">
               <strong><i class="fa-solid fa-calendar-days me-1"></i>Fecha:</strong> 20/10/2021
@@ -69,25 +69,25 @@
           <form>
             <div class="mb-3">
               <label for="name" class="col-form-label">Titulo:</label>
-              <input type="text" class="form-control" id="name" placeholder="Ingrese los nombres del psicológico">
+              <input type="text" class="form-control" id="name" placeholder="Ingrese el titulo de la proyeccion social">
             </div>
             <div class="row">
                 <div class="col-6">
                     <div class="mb-3">
                         <label for="ciclo" class="col-form-label">Fecha Inicio:</label>
-                        <input type="date" class="form-control" id="ciclo" placeholder="Ingrese el ciclo">
+                        <input type="date" class="form-control" id="ciclo" placeholder="Ingrese la fecha">
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="mb-3">
                         <label for="aula" class="col-form-label">Hora:</label>
-                        <input type="number" class="form-control" id="aula" placeholder="Ingrese el aula de tutoría">
+                        <input type="number" class="form-control" id="aula" placeholder="Ingrese la hora">
                     </div>
                 </div>
             </div>
             <div class="mb-3">
                 <label for="correo" class="col-form-label">Lugar:</label>
-                <input type="email" class="form-control" id="correo" placeholder="Ingrese el correo electrónico">
+                <input type="email" class="form-control" id="correo" placeholder="Ingrese el lugar">
             </div>
             <div class="mb-3">
                 <label for="nro-whatsapp" class="col-form-label"></label>
@@ -98,6 +98,50 @@
         <div class="modal-footer d-flex justify-content-end">
           <button type="button" class="btn btn-secondary btn-cancelar w-25" data-bs-dismiss="modal">Cancelar</button>
           <button type="button" class="btn btn-primary btn-registrar w-25">Registrar</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="updateProyeccion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar un nuevo responsable</h1>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="col-form-label">Titulo:</label>
+              <input type="text" class="form-control" id="name" placeholder="Ingrese el titulo de la proyeccion social">
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="ciclo" class="col-form-label">Fecha Inicio:</label>
+                        <input type="date" class="form-control" id="ciclo" placeholder="Ingrese fecha">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="aula" class="col-form-label">Hora:</label>
+                        <input type="number" class="form-control" id="aula" placeholder="Ingrese hora">
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="col-form-label">Lugar:</label>
+                <input type="email" class="form-control" id="correo" placeholder="Ingrese el lugar">
+            </div>
+            <div class="mb-3">
+                <label for="nro-whatsapp" class="col-form-label"></label>
+                <input type="file" class="form-control" id="nro-whatsapp" placeholder="Ingrese el número de WhatsApp">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-end">
+          <button type="button" class="btn btn-secondary btn-cancelar w-25" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary btn-registrar w-25 btn-registrar">Registrar</button>
         </div>
       </div>
     </div>

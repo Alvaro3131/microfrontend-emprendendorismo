@@ -1,390 +1,467 @@
 <article class="panel__info">
-    <div class="row mt-3">
-        <div class="col-2">
-            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <button class="nav-link active text-start" id="v-pills-activate-tab" data-bs-toggle="pill" data-bs-target="#v-pills-activate" type="button" role="tab" aria-controls="v-pills-activate" aria-selected="true"><i class="fa-solid fa-person-running" ></i> Activate</button>
-                <button class="nav-link text-start" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fa-solid fa-user" ></i> Tutoria Psicologica</button>
-                <button class="nav-link text-start" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fa-solid fa-person-praying" ></i> Tutoria Espiritual</button>
-                <button class="nav-link text-start" id="v-pills-configs-tab" data-bs-toggle="pill" data-bs-target="#v-pills-configs" type="button" role="tab" aria-controls="v-pills-configs" aria-selected="false"><i class="fa-solid fa-user-group" ></i> Classmate</button>
-                <button class="nav-link text-start" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fa-solid fa-user-tie" ></i> Lisa de Tutores</button>
-              </div>
+  <div class="row mt-3">
+    <div class="col-2">
+      <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link active text-start" id="v-pills-activate-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-activate" type="button" role="tab" aria-controls="v-pills-activate"
+          aria-selected="true"><i class="fa-solid fa-person-running"></i> Activate</button>
+        <button class="nav-link text-start" id="v-pills-profile-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+          aria-selected="false"><i class="fa-solid fa-user"></i> Tutoria Psicologica</button>
+        <button class="nav-link text-start" id="v-pills-messages-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+          aria-selected="false"><i class="fa-solid fa-person-praying"></i> Tutoria Espiritual</button>
+        <button class="nav-link text-start" id="v-pills-configs-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-configs" type="button" role="tab" aria-controls="v-pills-configs"
+          aria-selected="false"><i class="fa-solid fa-user-group"></i> Classmate</button>
+        <button class="nav-link text-start" id="v-pills-settings-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+          aria-selected="false"><i class="fa-solid fa-user-tie"></i> Lisa de Tutores</button>
+      </div>
 
-        </div>
-        <div class="col-10">
-            <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade" id="v-pills-activate" role="tabpanel" aria-labelledby="v-pills-activate-tab" tabindex="0">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1>Asistencias</h1>
-                            <button class="btn btn-float">
-                    Añadr Evento
-                            </button>
-                        </div>
-                        <div class="col-3">
-                            <div class="card" style="border: none;">
-                                <div class="card-body" style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
-                                    <p class="card-text">Evento</p>
-                                    <h5 class="card-title">Activate Sistema</h5>
-                                    <p class="card-text">E.P</p>
-                                    <h5 class="card-title">Ing. de Sistemas</h5>
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;"> <i class="fa-solid fa-gear"></i></button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Editar</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Eliminar</a></li>
-                                      </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card" style="border: none;">
-                                <div class="card-body" style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
-                                    <p class="card-text">Evento</p>
-                                    <h5 class="card-title">Activate Sistema</h5>
-                                    <p class="card-text">E.P</p>
-                                    <h5 class="card-title">Ing. de Sistemas</h5>
-
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;"> <i class="fa-solid fa-gear"></i></button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Editar</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Eliminar</a></li>
-                                      </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-3">
-                            <div class="card" style="border: none;">
-                                <div class="card-body" style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
-                                    <p class="card-text">Evento</p>
-                                    <h5 class="card-title">Activate Sistema</h5>
-                                    <p class="card-text">E.P</p>
-                                    <h5 class="card-title">Ing. de Sistemas</h5>
-
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;"> <i class="fa-solid fa-gear"></i></button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Editar</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Eliminar</a></li>
-                                      </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-3">
-                            <div class="card" style="border: none;">
-                                <div class="card-body" style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
-                                    <p class="card-text">Evento</p>
-                                    <h5 class="card-title">Activate Sistema</h5>
-                                    <p class="card-text">E.P</p>
-                                    <h5 class="card-title">Ing. de Sistemas</h5>
-
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;"> <i class="fa-solid fa-gear"></i></button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Editar</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Eliminar</a></li>
-                                      </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
-                    <div class="d-flex flex-row-reverse">
-                        <div class="btn btn-info btn-add-psicologo" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Añadir un nuevo psicólogo</div>
-                    </div>
-
-                    <div class="row d-flex justify-content-center align-items-center pt-5" >
-                        <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
-                            <div class="title-card d-flex justify-content-center align-items-center">Psicólogo Disponible</div>
-                            <div class="panel-light p-4 pt-5">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="assets/perfil.png" alt="" width="100%">
-                                    </div>
-                                    <div class="col-9 pt-2">
-                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Juan Sanches Gutierrez</p>
-                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Psicólogo E.P. Sistemas</p>
-                                    </div>
-                                </div>
-                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
-                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
-                                <div class="row justify-content-center mt-4">
-                                    <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
-                            <div class="title-card d-flex justify-content-center align-items-center">Psicólogo Disponible</div>
-                            <div class="panel-light p-4 pt-5">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="assets/perfil.png" alt="" width="100%">
-                                    </div>
-                                    <div class="col-9 pt-2">
-                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Juan Sanches Gutierrez</p>
-                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Psicólogo E.P. Sistemas</p>
-                                    </div>
-                                </div>
-                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
-                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
-                                <div class="row justify-content-center mt-4">
-                                    <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
-                    <div class="d-flex flex-row-reverse">
-                        <div class="btn btn-info btn-add-psicologo" data-bs-toggle="modal" data-bs-target="#addAsesorModal">+ Añadir un nuevo asesor espiritual</div>
-                    </div>
-
-                    <div class="row d-flex justify-content-center align-items-center pt-5" >
-                        <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
-                            <div class="title-card d-flex justify-content-center align-items-center">Asesor Disponible</div>
-                            <div class="panel-light p-4 pt-5">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="assets/perfil.png" alt="" width="100%">
-                                    </div>
-                                    <div class="col-9 pt-2">
-                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Pr. Juan Ticona García</p>
-                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Capellán E.P. Sistemas</p>
-                                    </div>
-                                </div>
-                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
-                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
-                                <div class="row justify-content-center mt-4">
-                                    <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="v-pills-configs" role="tabpanel" aria-labelledby="v-pills-configs-tab" tabindex="0">
-                    <div class="d-flex flex-row-reverse">
-                        <div class="btn btn-info btn-add-psicologo" data-bs-toggle="modal" data-bs-target="#addClassmateModal">+  un nuevo Classmate</div>
-                    </div>
-
-                    <div class="row d-flex justify-content-center align-items-center pt-5" >
-                        <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
-                            <div class="title-card d-flex justify-content-center align-items-center">Classmate Disponible</div>
-                            <div class="panel-light p-4 pt-5">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="assets/perfil.png" alt="" width="100%">
-                                    </div>
-                                    <div class="col-9 pt-2">
-                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Josue Dominguez Huamani</p>
-                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">VII Ciclo Sistemas</p>
-                                    </div>
-                                </div>
-                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
-                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Salón:</strong> Laboratorio Cisco</p>
-                                <div class="row justify-content-center mt-4">
-                                    <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-8 pe-5 ps-4 mt-2" style="position: relative;">
-                            <table class="table table-bordered">
-                                <thead>
-                                  <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col">Dom</th>
-                                    <th scope="col">Lun</th>
-                                    <th scope="col">Mar</th>
-                                    <th scope="col">Mie</th>
-                                    <th scope="col">Jue</th>
-                                    <th scope="col">Vie</th>
-                                    <th scope="col">Sab</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <th>8 - 9 am</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                  </tr>
-                                  <tr>
-                                    <th>9 - 10 am</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                  </tr>
-                                  <tr>
-                                    <th>10 - 11 am</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                  </tr>
-                                  <tr>
-                                    <th>11 - 12 am</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                  </tr>
-                                  <tr>
-                                    <th>12 - 1 pm</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                  </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
-                    <div class="d-flex flex-row-reverse">
-                        <div class="btn btn-info btn-add-psicologo" data-bs-toggle="modal" data-bs-target="#addTutorModal">+ Añadir un nuevo tutor</div>
-                    </div>
-
-                    <div class="row d-flex justify-content-center align-items-center pt-5" >
-                        <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
-                            <div class="title-card d-flex justify-content-center align-items-center">II Ciclo - Ing. de Sistemas</div>
-                            <div class="panel-light p-4 pt-5">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="assets/perfil.png" alt="" width="100%">
-                                    </div>
-                                    <div class="col-9 pt-2">
-                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Mag. Alvaro Alva</p>
-                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Aula de tutoría: E-102</p>
-                                    </div>
-                                </div>
-                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
-                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
-                                <div class="row justify-content-center mt-4">
-                                    <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
-                            <div class="title-card d-flex justify-content-center align-items-center">IV Ciclo - Ing. de Sistemas</div>
-                            <div class="panel-light p-4 pt-5">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="assets/perfil.png" alt="" width="100%">
-                                    </div>
-                                    <div class="col-9 pt-2">
-                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Ing. Diana Sanchez</p>
-                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Aula de tutoría: E-202</p>
-                                    </div>
-                                </div>
-                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
-                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
-                                <div class="row justify-content-center mt-4">
-                                    <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="row justify-content-center mt-4">
-                                            <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-              </div>
-        </div>
     </div>
+    <div class="col-10">
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade" id="v-pills-activate" role="tabpanel" aria-labelledby="v-pills-activate-tab"
+          tabindex="0">
+          <div class="row">
+            <div class="col-12">
+              <h1>Activate - Culturas</h1>
+              <div class="d-flex justify-content-between mb-3">
+                <div>
+                  <button class="btn btn-revisar">
+                    Revisar reporte de asistencias
+                  </button>
+                </div>
+                <div class="d-flex align-items-center ">
+                  <div>
+                    <select class="select-semestre" name="semestre" id="semestre">
+                      <option value="0" disabled selected>Selecciona un semestre</option>
+                    </select>
+                  </div>
+                  <div>
+                    <button class="btn btn-warning btn-nuevo" data-bs-toggle="modal" data-bs-target="#modalnuevaevento">
+                      Nuevo Evento
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 mb-4">
+                <div class="card" style="border: none;">
+                  <div class="card-body"
+                    style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
+                    <p class="card-text">Evento</p>
+                    <h5 class="card-title">Activate Sistema</h5>
+                    <p class="card-text">E.P</p>
+                    <h5 class="card-title">Ing. de Sistemas</h5>
+                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;">
+                      <i class="fa-solid fa-gear"></i></button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-pen-to-square"></i>Editar</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash"></i>Eliminar</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mb-4">
+                <div class="card" style="border: none;">
+                  <div class="card-body"
+                    style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
+                    <p class="card-text">Evento</p>
+                    <h5 class="card-title">Activate Sistema</h5>
+                    <p class="card-text">E.P</p>
+                    <h5 class="card-title">Ing. de Sistemas</h5>
+
+                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;">
+                      <i class="fa-solid fa-gear"></i></button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Editar</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Eliminar</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4 mb-4">
+                <div class="card" style="border: none;">
+                  <div class="card-body"
+                    style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
+                    <p class="card-text">Evento</p>
+                    <h5 class="card-title">Activate Sistema</h5>
+                    <p class="card-text">E.P</p>
+                    <h5 class="card-title">Ing. de Sistemas</h5>
+
+                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;">
+                      <i class="fa-solid fa-gear"></i></button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Editar</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Eliminar</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4 mb-4">
+                <div class="card" style="border: none;">
+                  <div class="card-body"
+                    style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
+                    <p class="card-text">Evento</p>
+                    <h5 class="card-title">Activate Sistema</h5>
+                    <p class="card-text">E.P</p>
+                    <h5 class="card-title">Ing. de Sistemas</h5>
+
+                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;">
+                      <i class="fa-solid fa-gear"></i></button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Editar</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Eliminar</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+          tabindex="0">
+          <div class="d-flex flex-row-reverse">
+            <div class="btn btn-info btn-add-psicologo" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Añadir
+              un nuevo psicólogo</div>
+          </div>
+
+          <div class="row d-flex justify-content-center align-items-center pt-5">
+            <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
+              <div class="title-card d-flex justify-content-center align-items-center">Psicólogo Disponible</div>
+              <div class="panel-light p-4 pt-5">
+                <div class="row">
+                  <div class="col-3">
+                    <img src="assets/perfil.png" alt="" width="100%">
+                  </div>
+                  <div class="col-9 pt-2">
+                    <p style="font-weight: bold; color: black; margin-bottom: 5px;">Juan Sanches Gutierrez</p>
+                    <p style="font-weight: bold;padding: 0; color: darkseagreen;">Psicólogo E.P. Sistemas</p>
+                  </div>
+                </div>
+                <p style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;">
+                  <strong>Celular:</strong> 987654321</p>
+                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo
+                  upeu.edu.pe</p>
+                <div class="row justify-content-center mt-4">
+                  <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i
+                      style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por
+                    Whatsaap</button>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="row justify-content-center mt-4">
+                      <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="row justify-content-center mt-4">
+                      <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
+              <div class="title-card d-flex justify-content-center align-items-center">Psicólogo Disponible</div>
+              <div class="panel-light p-4 pt-5">
+                <div class="row">
+                  <div class="col-3">
+                    <img src="assets/perfil.png" alt="" width="100%">
+                  </div>
+                  <div class="col-9 pt-2">
+                    <p style="font-weight: bold; color: black; margin-bottom: 5px;">Juan Sanches Gutierrez</p>
+                    <p style="font-weight: bold;padding: 0; color: darkseagreen;">Psicólogo E.P. Sistemas</p>
+                  </div>
+                </div>
+                <p style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;">
+                  <strong>Celular:</strong> 987654321</p>
+                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo
+                  upeu.edu.pe</p>
+                <div class="row justify-content-center mt-4">
+                  <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i
+                      style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por
+                    Whatsaap</button>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="row justify-content-center mt-4">
+                      <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="row justify-content-center mt-4">
+                      <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
+          tabindex="0">
+          <div class="d-flex flex-row-reverse">
+            <div class="btn btn-info btn-add-psicologo" data-bs-toggle="modal" data-bs-target="#addAsesorModal">+ Añadir
+              un nuevo asesor espiritual</div>
+          </div>
+
+          <div class="row d-flex justify-content-center align-items-center pt-5">
+            <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
+              <div class="title-card d-flex justify-content-center align-items-center">Asesor Disponible</div>
+              <div class="panel-light p-4 pt-5">
+                <div class="row">
+                  <div class="col-3">
+                    <img src="assets/perfil.png" alt="" width="100%">
+                  </div>
+                  <div class="col-9 pt-2">
+                    <p style="font-weight: bold; color: black; margin-bottom: 5px;">Pr. Juan Ticona García</p>
+                    <p style="font-weight: bold;padding: 0; color: darkseagreen;">Capellán E.P. Sistemas</p>
+                  </div>
+                </div>
+                <p style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;">
+                  <strong>Celular:</strong> 987654321</p>
+                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo
+                  upeu.edu.pe</p>
+                <div class="row justify-content-center mt-4">
+                  <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i
+                      style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por
+                    Whatsaap</button>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="row justify-content-center mt-4">
+                      <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="row justify-content-center mt-4">
+                      <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-configs" role="tabpanel" aria-labelledby="v-pills-configs-tab"
+          tabindex="0">
+          <div class="d-flex flex-row-reverse">
+            <div class="btn btn-info btn-add-psicologo" data-bs-toggle="modal" data-bs-target="#addClassmateModal">+ un
+              nuevo Classmate</div>
+          </div>
+
+          <div class="row d-flex justify-content-center align-items-center pt-5">
+            <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
+              <div class="title-card d-flex justify-content-center align-items-center">Classmate Disponible</div>
+              <div class="panel-light p-4 pt-5">
+                <div class="row">
+                  <div class="col-3">
+                    <img src="assets/perfil.png" alt="" width="100%">
+                  </div>
+                  <div class="col-9 pt-2">
+                    <p style="font-weight: bold; color: black; margin-bottom: 5px;">Josue Dominguez Huamani</p>
+                    <p style="font-weight: bold;padding: 0; color: darkseagreen;">VII Ciclo Sistemas</p>
+                  </div>
+                </div>
+                <p style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;">
+                  <strong>Celular:</strong> 987654321</p>
+                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Salón:</strong> Laboratorio Cisco
+                </p>
+                <div class="row justify-content-center mt-4">
+                  <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i
+                      style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por
+                    Whatsaap</button>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="row justify-content-center mt-4">
+                      <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="row justify-content-center mt-4">
+                      <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-8 pe-5 ps-4 mt-2" style="position: relative;">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Dom</th>
+                    <th scope="col">Lun</th>
+                    <th scope="col">Mar</th>
+                    <th scope="col">Mie</th>
+                    <th scope="col">Jue</th>
+                    <th scope="col">Vie</th>
+                    <th scope="col">Sab</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>8 - 9 am</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>9 - 10 am</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>10 - 11 am</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>11 - 12 am</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>12 - 1 pm</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
+          tabindex="0">
+          <div class="d-flex flex-row-reverse">
+            <div class="btn btn-info btn-add-psicologo" data-bs-toggle="modal" data-bs-target="#addTutorModal">+ Añadir
+              un nuevo tutor</div>
+          </div>
+
+          <div class="row d-flex justify-content-center align-items-center pt-5">
+            <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
+              <div class="title-card d-flex justify-content-center align-items-center">II Ciclo - Ing. de Sistemas</div>
+              <div class="panel-light p-4 pt-5">
+                <div class="row">
+                  <div class="col-3">
+                    <img src="assets/perfil.png" alt="" width="100%">
+                  </div>
+                  <div class="col-9 pt-2">
+                    <p style="font-weight: bold; color: black; margin-bottom: 5px;">Mag. Alvaro Alva</p>
+                    <p style="font-weight: bold;padding: 0; color: darkseagreen;">Aula de tutoría: E-102</p>
+                  </div>
+                </div>
+                <p style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;">
+                  <strong>Celular:</strong> 987654321</p>
+                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo
+                  upeu.edu.pe</p>
+                <div class="row justify-content-center mt-4">
+                  <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i
+                      style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por
+                    Whatsaap</button>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="row justify-content-center mt-4">
+                      <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="row justify-content-center mt-4">
+                      <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
+              <div class="title-card d-flex justify-content-center align-items-center">IV Ciclo - Ing. de Sistemas</div>
+              <div class="panel-light p-4 pt-5">
+                <div class="row">
+                  <div class="col-3">
+                    <img src="assets/perfil.png" alt="" width="100%">
+                  </div>
+                  <div class="col-9 pt-2">
+                    <p style="font-weight: bold; color: black; margin-bottom: 5px;">Ing. Diana Sanchez</p>
+                    <p style="font-weight: bold;padding: 0; color: darkseagreen;">Aula de tutoría: E-202</p>
+                  </div>
+                </div>
+                <p style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;">
+                  <strong>Celular:</strong> 987654321</p>
+                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo
+                  upeu.edu.pe</p>
+                <div class="row justify-content-center mt-4">
+                  <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;"><i
+                      style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por
+                    Whatsaap</button>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="row justify-content-center mt-4">
+                      <button class="btn" style="border: 1px solid #d31313; color: #d31313;">Eliminar</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="row justify-content-center mt-4">
+                      <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6;">Editar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </article>
 
@@ -393,3 +470,57 @@
 <app-add-asesor-espiritual></app-add-asesor-espiritual>
 <app-add-classmate></app-add-classmate>
 <app-add-tutor></app-add-tutor>
+
+
+<div class="modal fade" id="modalnuevaevento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo Evento</h1>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row">
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="ciclo" class="col-form-label">Evento:</label>
+                <input type="text" class="form-control" id="ciclo" placeholder="Ingrese el ciclo">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="aula" class="col-form-label">EP que lo dirigira:</label>
+                <input type="text" class="form-control" id="aula" placeholder="Ingrese el aula de tutoría">
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="name" class="col-form-label">Semestre:</label>
+            <select class="form-select" aria-label="Large select example">
+              <option selected>Seleccione Semestre</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="col-form-label">Lugar:</label>
+            <input type="email" class="form-control" id="correo" placeholder="Ingrese el correo electrónico">
+          </div>
+          <div class="mb-3">
+            <label for="nro-whatsapp" class="col-form-label">Fecha del Evento:</label>
+            <input type="date" class="form-control" id="nro-whatsapp" placeholder="Ingrese el número de WhatsApp">
+          </div>
+          <div class="mb-3">
+            <label for="nro-whatsapp" class="col-form-label">Hora:</label>
+            <input type="number" class="form-control" id="nro-whatsapp" placeholder="Ingrese el número de WhatsApp">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer d-flex">
+        <button type="button" class="btn btn-secondary btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary btn-registrar">Registrar</button>
+      </div>
+    </div>
+  </div>
+</div>
