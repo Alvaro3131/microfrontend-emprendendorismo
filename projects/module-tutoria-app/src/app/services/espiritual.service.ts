@@ -15,7 +15,7 @@ export class EspiritualService {
   );
   
   private agregarAuthorizationHeader(){
-    let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwZXJzb25Db2RlIjoiMjAyMDEwMzk4IiwiaWF0IjoxNzAxMzAwMzI4LCJleHAiOjE3MDEzMDM5Mjh9.mqrLv2rOnqKvomxYJS_qGxEtNhgZ_9KKHgGQ83_Gfqg';
+    let token = sessionStorage.getItem('token');
     if(token!=null){
       return this.httpHeaders.append('auth-token',token);
     }
