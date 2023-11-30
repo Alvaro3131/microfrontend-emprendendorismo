@@ -32,15 +32,15 @@ button.active{
     border: 1px solid #E0E0E0;
     box-shadow:  20px 20px 23px #d5d5d5,
     -20px -20px 23px #ebebeb;
-    height: 65vh;
+    height: 75vh;
   }
   .panel-light{
     border-radius: 10px;
     border: 1px solid #E0E0E0;
     box-shadow:  20px 20px 23px #d5d5d5,
     -20px -20px 23px #ebebeb;
-    min-height: 40vh;
-    max-height: 50vh;
+    min-height: 45vh;
+    max-height: 55vh;
   }
   .panel-extra{
     border-radius: 10px;
@@ -129,4 +129,9 @@ button.active{
     padding: 15px;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+
+.btn-registrar{
+  color: #ebebeb !important;
 }

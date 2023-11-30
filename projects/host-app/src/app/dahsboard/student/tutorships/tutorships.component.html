@@ -30,13 +30,16 @@
                                     <div class="info">
                                         <div class="row p-4">
                                             <div class="col-lg-6 col-12 mt-2">
-                                                <strong><i class="fa-solid fa-calendar-days me-1"></i>Fecha:</strong> 20/10/2021
+                                                <strong><i class="fa-solid fa-calendar-days me-1"></i>Fecha:</strong>  {{fecha | date: 'dd/MM/yyyy'}}
                                             </div>
                                             <div class="col-lg-6 col-12 mt-2">
-                                                <strong><i class="fa-regular fa-clock me-1"></i>Hora:</strong> 10:00 A.M
+                                                <strong><i class="fa-regular fa-clock me-1"></i>Hora:</strong> {{fecha | date: 'hh:mm a'}}
                                             </div>
                                             <div class="col-12 mt-2">
-                                                <strong><i class="fa-solid fa-location-dot me-1"></i>Lugar:</strong> Mansión de la UpeU
+                                                <strong><i class="fa-solid fa-clipboard me-1"></i>Nombre:</strong> {{name}}
+                                            </div>
+                                            <div class="col-12 mt-2">
+                                                <strong><i class="fa-solid fa-location-dot me-1"></i>Lugar:</strong> {{lugar}}
                                             </div>
                                         </div>
                                
@@ -53,14 +56,14 @@
                                             <div class="row">
                                                 <div class="col-6 pt-3 d-flex flex-column justify-content-center align-items-center">
                                                     <p style=" font-weight: bold; color: rgba(0, 51, 102, 1); margin: 0;" class="text-4">Total de Actividades</p>
-                                                    <p style=" color: #3E98B6; font-weight: bold;">10</p>
+                                                    <p style=" color: #3E98B6; font-weight: bold;">{{allActivities}}</p>
                                                     <p style=" font-weight: bold; color: rgba(0, 51, 102, 1); margin: 0;" class="text-4">Act. Asistidas</p>
-                                                    <p style="color: #3E98B6; font-weight: bold;">5</p>
+                                                    <p style="color: #3E98B6; font-weight: bold;">{{particpatedActivities}}</p>
                                                 </div>
                                                 <div class="col-6 pt-3 d-flex justify-content-center align-items-center">
-                                                    <circle-progress [percent]="50" [radius]="50" [space]="-16" [outerStrokeWidth]="17"
+                                                    <circle-progress [percent]="percent" [radius]="50" [space]="-16" [outerStrokeWidth]="17"
                                                     [outerStrokeColor]="'#EDA619'" [innerStrokeWidth]="17" [innerStrokeColor]="'#AFAFAF'"
-                                                    [title]="50+'%'" [titleFontSize]="'20'" [titleFontWeight]="'700'"
+                                                    [title]="percent+'%'" [titleFontSize]="'20'" [titleFontWeight]="'700'"
                                                     [titleColor]="'#1B447D'" [showUnits]="false" [showSubtitle]="false" [showUnits]="false"
                                                     [clockwise]="true" [startFromZero]="false"></circle-progress>
                                                 </div>
@@ -93,7 +96,7 @@
                         </div>
                         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
                             <div class="row">
-                                <div class="col-lg-6 col-12 mb-4 card-information">
+                                <div class="col-lg-6 col-12 mb-4 card-information" *ngFor="let psicology of psicologies">
                                     <div  class="pt-4 header" >
                                         <div class="panel">
                                             Psicólogo Disponible
@@ -104,51 +107,27 @@
                                                         <img src="assets/elip.svg" alt="" width="55%">
                                                 </div>
                                                 <div class="col-9 d-flex justify-content-center flex-column">
-                                                    <p style="font-weight: bold; color: black;">Juan Sanches Gutierrez</p>
+                                                    <p style="font-weight: bold; color: black;">{{psicology.name}}</p>
                                                     <p style="font-weight: bold; color: darkseagreen;">Psicólogo E.P. Sistemas</p>
                                                 </div>
                                             </div>                            
                                             <div class="d-flex align-items-start flex-column pt-4 ps-5">
-                                                <p  style="color: black;"><strong>Celular:</strong> 987654321</p>
-                                                <p style="color: black;"><strong>Correo:</strong> Correo@upeu.edu.pe</p>
+                                                <p  style="color: black;"><strong>Celular:</strong> {{psicology.phone}}</p>
+                                                <p style="color: black;"><strong>Correo:</strong> {{psicology.email}}</p>
                                             </div>
                                                <div class="row pt-3 d-flex align-items-center justify-content-center">
-                                                     <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6; width: 250px;" (click)="abrirWhatsApp()" ><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por WhatsApp</button>
+                                                     <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6; width: 250px;" (click)="abrirWhatsApp(psicology.phone)" ><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por WhatsApp</button>
                                                 </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-12 mb-4 card-information">
-                                    <div  class="pt-4 header" >
-                                        <div class="panel">
-                                            Psicólogo Disponible
-                                        </div>
-                                        <div class="target4">
-                                            <div class="row pt-4">
-                                                <div class="col-3 d-flex justify-content-end">
-                                                    <img src="assets/elip.svg" alt="" width="55%">
-                                                </div>
-                                                <div class="col-9 d-flex justify-content-center flex-column">
-                                                    <p style="font-weight: bold; color: black;">Manuela Gómez Huanca</p>
-                                                    <p style="font-weight: bold; color: darkseagreen;">Psicólogo E.P. Sistemas</p>
-                                                </div>
-                                            </div>                            
-                                            <div class="d-flex align-items-start flex-column pt-4 ps-5">
-                                                <p  style="color: black;"><strong>Celular:</strong> 987654321</p>
-                                                <p style="color: black;"><strong>Correo:</strong> Correo@upeu.edu.pe</p>
-                                            </div>
-                                               <div class="row pt-3 d-flex align-items-center justify-content-center">
-                                                     <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6; width: 250px;" (click)="abrirWhatsApp()" ><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por WhatsApp</button>
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            
                              
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
                             <div class="row">
-                                <div class="col-lg-6 col-12 mb-4 card-information">
+                                <div class="col-lg-6 col-12 mb-4 card-information" *ngFor="let pastor of spritual">
                                     <div  class="pt-4 header" >
                                         <div class="panel">
                                             Asesor Disponible
@@ -159,16 +138,16 @@
                                                     <img src="assets/elip.svg" alt="" width="55%">
                                                 </div>
                                                 <div class="col-9 d-flex justify-content-center flex-column">
-                                                    <p style="font-weight: bold; color: black;">Pr. Juan Ticona García</p>
-                                                    <p style="font-weight: bold; color: darkseagreen;">Capellan E.P. Sistemas</p>
+                                                    <p style="font-weight: bold; color: black;">{{pastor.name}}</p>
+                                                    <p style="font-weight: bold; color: darkseagreen;">{{pastor.type_person}}</p>
                                                 </div>
                                             </div>                            
                                             <div class="d-flex align-items-start flex-column pt-4 ps-5">
-                                                <p  style="color: black;"><strong>Celular:</strong> 987654321</p>
-                                                <p style="color: black;"><strong>Correo:</strong> Correo@upeu.edu.pe</p>
+                                                <p  style="color: black;"><strong>Celular:</strong> {{pastor.phone}}</p>
+                                                <p style="color: black;"><strong>Correo:</strong> {{pastor.email}}</p>
                                             </div>
                                                <div class="row pt-3 d-flex align-items-center justify-content-center">
-                                                     <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6; width: 250px;" (click)="abrirWhatsApp()" ><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por WhatsApp</button>
+                                                     <button class="btn" style="border: 1px solid #3E98B6; color: #3E98B6; width: 250px;" (click)="abrirWhatsApp(pastor.phone)" ><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por WhatsApp</button>
                                                 </div>
                                         </div>
                                     </div>

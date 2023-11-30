@@ -12,83 +12,112 @@
         </div>
         <div class="col-10">
             <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade" id="v-pills-activate" role="tabpanel" aria-labelledby="v-pills-activate-tab" tabindex="0">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1>Asistencias</h1>
-                            <button class="btn btn-float">
-                    Añadr Evento
+                <div class="tab-pane fade" id="v-pills-activate" role="tabpanel" aria-labelledby="v-pills-activate-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-12">
+                    <h1>Activate - Culturas</h1>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div>
+                        <button class="btn btn-revisar">
+                            Revisar reporte de asistencias
+                        </button>
+                        </div>
+                        <div class="d-flex align-items-center ">
+                        <div>
+                            <select class="select-semestre" name="semestre" id="semestre">
+                            <option value="0" disabled selected>Selecciona un semestre</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="btn btn-warning btn-nuevo" data-bs-toggle="modal" data-bs-target="#modalnuevaevento">
+                            Nuevo Evento
                             </button>
                         </div>
-                        <div class="col-3">
-                            <div class="card" style="border: none;">
-                                <div class="card-body" style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
-                                    <p class="card-text">Evento</p>
-                                    <h5 class="card-title">Activate Sistema</h5>
-                                    <p class="card-text">E.P</p>
-                                    <h5 class="card-title">Ing. de Sistemas</h5>
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;"> <i class="fa-solid fa-gear"></i></button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Editar</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Eliminar</a></li>
-                                      </ul>
-                                </div>
-                            </div>
                         </div>
-                        <div class="col-3">
-                            <div class="card" style="border: none;">
-                                <div class="card-body" style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
-                                    <p class="card-text">Evento</p>
-                                    <h5 class="card-title">Activate Sistema</h5>
-                                    <p class="card-text">E.P</p>
-                                    <h5 class="card-title">Ing. de Sistemas</h5>
-
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;"> <i class="fa-solid fa-gear"></i></button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Editar</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Eliminar</a></li>
-                                      </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-3">
-                            <div class="card" style="border: none;">
-                                <div class="card-body" style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
-                                    <p class="card-text">Evento</p>
-                                    <h5 class="card-title">Activate Sistema</h5>
-                                    <p class="card-text">E.P</p>
-                                    <h5 class="card-title">Ing. de Sistemas</h5>
-
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;"> <i class="fa-solid fa-gear"></i></button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Editar</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Eliminar</a></li>
-                                      </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-3">
-                            <div class="card" style="border: none;">
-                                <div class="card-body" style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
-                                    <p class="card-text">Evento</p>
-                                    <h5 class="card-title">Activate Sistema</h5>
-                                    <p class="card-text">E.P</p>
-                                    <h5 class="card-title">Ing. de Sistemas</h5>
-
-                                    <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;"> <i class="fa-solid fa-gear"></i></button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Editar</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Eliminar</a></li>
-                                      </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-
                     </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-4 mb-4">
+                        <div class="card" style="border: none;">
+                        <div class="card-body"
+                            style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
+                            <p class="card-text">Evento</p>
+                            <h5 class="card-title">Activate Sistema</h5>
+                            <p class="card-text">E.P</p>
+                            <h5 class="card-title">Ing. de Sistemas</h5>
+                            <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;">
+                            <i class="fa-solid fa-gear"></i></button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-pen-to-square"></i>Editar</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash"></i>Eliminar</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <div class="card" style="border: none;">
+                        <div class="card-body"
+                            style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
+                            <p class="card-text">Evento</p>
+                            <h5 class="card-title">Activate Sistema</h5>
+                            <p class="card-text">E.P</p>
+                            <h5 class="card-title">Ing. de Sistemas</h5>
+                            <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;">
+                            <i class="fa-solid fa-gear"></i></button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Editar</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Eliminar</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <div class="card" style="border: none;">
+                        <div class="card-body"
+                            style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
+                            <p class="card-text">Evento</p>
+                            <h5 class="card-title">Activate Sistema</h5>
+                            <p class="card-text">E.P</p>
+                            <h5 class="card-title">Ing. de Sistemas</h5>
+
+                            <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;">
+                            <i class="fa-solid fa-gear"></i></button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Editar</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Eliminar</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <div class="card" style="border: none;">
+                        <div class="card-body"
+                            style="background-color: rgba(0, 51, 102, 1); border-radius: 20px; color: white; position: relative; width: 296px; max-height: 258px;">
+                            <p class="card-text">Evento</p>
+                            <h5 class="card-title">Activate Sistema</h5>
+                            <p class="card-text">E.P</p>
+                            <h5 class="card-title">Ing. de Sistemas</h5>
+
+                            <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="position: absolute;top: 0px; right: 0px; height: 62px; width: 62px; border-radius: 0px 20px 0px 20px; background-color: #F8A900;">
+                            <i class="fa-solid fa-gear"></i></button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Editar</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Eliminar</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
                 </div>
                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
                     <div class="d-flex flex-row-reverse">
@@ -275,45 +304,82 @@
               </div>
         </div>
     </div>
-
+    
+        
 </article>
+<div class="modal fade" id="modalnuevaevento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo Evento</h1>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row">
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="ciclo" class="col-form-label">Evento:</label>
+                <input type="text" class="form-control" id="ciclo" placeholder="Ingrese el ciclo">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="aula" class="col-form-label">EP que lo dirigira:</label>
+                <input type="text" class="form-control" id="aula" placeholder="Ingrese el aula de tutoría">
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="name" class="col-form-label">Semestre:</label>
+            <select class="form-select" aria-label="Large select example">
+              <option selected>Seleccione Semestre</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="col-form-label">Lugar:</label>
+            <input type="email" class="form-control" id="correo" placeholder="Ingrese el correo electrónico">
+          </div>
+          <div class="mb-3">
+            <label for="nro-whatsapp" class="col-form-label">Fecha del Evento:</label>
+            <input type="date" class="form-control" id="nro-whatsapp" placeholder="Ingrese el número de WhatsApp">
+          </div>
+          <div class="mb-3">
+            <label for="nro-whatsapp" class="col-form-label">Hora:</label>
+            <input type="number" class="form-control" id="nro-whatsapp" placeholder="Ingrese el número de WhatsApp">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer d-flex">
+        <div class="d-flex">
+          <button type="button" class="btn btn-secondary btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary btn-registrar mx-2">Registrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-<app-add-psicologo
-(volveraListarPsicologos)="getPsicologos2daVez($event)">
+<app-add-psicologo (volveraListarPsicologos)="getPsicologos2daVez($event)">
 </app-add-psicologo>
 
-<app-edit-psicologo
-[id_psicologo]="idPsico"
-[name_edit2]="namePsico"
-[apepat_edit2]="apepatPsico"
-[apemat_edit2]="apematPsico"
-[email_edit2]="emailPsico"
-[phone_edit2]="phonePsico"
-[type_person_edit2]="type_personPsico"
-(volveraListarPsicologos)="getPsicologos2daVez($event)">
+<app-edit-psicologo [id_psicologo]="idPsico" [name_edit2]="namePsico" [apepat_edit2]="apepatPsico"
+  [apemat_edit2]="apematPsico" [email_edit2]="emailPsico" [phone_edit2]="phonePsico"
+  [type_person_edit2]="type_personPsico" (volveraListarPsicologos)="getPsicologos2daVez($event)">
 </app-edit-psicologo>
 
-<app-add-asesor-espiritual
-(volveraListarAsesores)="getAsesores2daVez($event)">
+<app-add-asesor-espiritual (volveraListarAsesores)="getAsesores2daVez($event)">
 </app-add-asesor-espiritual>
 
-<app-edit-asesor-espiritual
-[id_asesor]="idAsesor"
-[name_edit1]="nameAsesor"
-[apepat_edit1]="apepatAsesor"
-[apemat_edit1]="apematAsesor"
-[email_edit1]="emailAsesor"
-[phone_edit1]="phoneAsesor"
-[type_person_edit1]="type_personAsesor"
-(volveraListarAsesores)="getAsesores2daVez($event)">
+<app-edit-asesor-espiritual [id_asesor]="idAsesor" [name_edit1]="nameAsesor" [apepat_edit1]="apepatAsesor"
+  [apemat_edit1]="apematAsesor" [email_edit1]="emailAsesor" [phone_edit1]="phoneAsesor"
+  [type_person_edit1]="type_personAsesor" (volveraListarAsesores)="getAsesores2daVez($event)">
 </app-edit-asesor-espiritual>
 
-<app-add-classmate
->
+<app-add-classmate>
 </app-add-classmate>
 
-<app-add-tutor
->
+<app-add-tutor>
 </app-add-tutor>
-
