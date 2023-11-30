@@ -24,7 +24,19 @@ export class LoginComponent {
   }
   loginTeacher(){
     if(this.user=='asin'){
-      this.router.navigate(['./dashboard/teacher/tutoria'])
+
+      let code = '202010398';
+      let user = 'Fernando Asin'
+
+      this.authService.loginStudent(code).subscribe((res:any)=>{
+        console.log(res);
+        if(res.data.token){
+          sessionStorage.setItem('token',res.data.token);
+          sessionStorage.setItem('user',user);
+          this.router.navigate(['./dashboard/teacher/tutoria'])
+        }
+      })
+
     }else if(this.user=='diana'){
       this.router.navigate(['./dashboard/teacher/proyeccion'])
     }

@@ -6,7 +6,7 @@
                 <button class="nav-link text-start" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fa-solid fa-user" ></i> Tutoria Psicologica</button>
                 <button class="nav-link text-start" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fa-solid fa-person-praying" ></i> Tutoria Espiritual</button>
                 <button class="nav-link text-start" id="v-pills-configs-tab" data-bs-toggle="pill" data-bs-target="#v-pills-configs" type="button" role="tab" aria-controls="v-pills-configs" aria-selected="false"><i class="fa-solid fa-user-group" ></i> Classmate</button>
-                <button class="nav-link text-start" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fa-solid fa-user-tie" ></i> Lisa de Tutores</button>
+                <button class="nav-link text-start" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fa-solid fa-user-tie" ></i> Lista de Tutores</button>
               </div>
 
         </div>
@@ -136,31 +136,60 @@
                     <div class="d-flex flex-row-reverse">
                         <div class="btn btn-info btn-add-psicologo" data-bs-toggle="modal" data-bs-target="#addClassmateModal">+ Añadir un nuevo Classmate</div>
                     </div>
-
+                        
                     <div class="row d-flex justify-content-center align-items-center pt-5" >
-                        <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
-                            <div class="title-card d-flex justify-content-center align-items-center">Classmate Disponible</div>
-                            <div class="panel-light p-4 pt-5">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="assets/perfil.png" alt="" width="100%">
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <div class="pe-5 ps-4" style="position: relative;">
+                                <div class="title-card d-flex justify-content-center align-items-center pointer" (click)="generateWeeklyEvents()">Classmate Disponible</div>
+                                <div class="panel-light p-4 pt-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="assets/perfil.png" alt="" width="100%">
+                                        </div>
+                                        <div class="col-9 pt-2">
+                                            <p style="font-weight: bold; color: black; margin-bottom: 5px;">Josue Dominguez Huamani</p>
+                                            <p style="font-weight: bold;padding: 0; color: darkseagreen;">VII Ciclo Sistemas</p>
+                                        </div>
                                     </div>
-                                    <div class="col-9 pt-2">
-                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Josue Dominguez Huamani</p>
-                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">VII Ciclo Sistemas</p>
+                                    <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
+                                    <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Salón:</strong> Laboratorio Cisco</p>
+                                    <div class="row justify-content-center mt-4">
+                                        <button class="btn btn-wsp"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
+                                    </div>
+                                    <div class="d-flex justify-content-evenly">
+                                        <div class="mt-4">
+                                            <button class="btn btn-eliminar">Eliminar</button>
+                                        </div>
+                                        <div class="mt-4">
+                                            <button class="btn btn-editar">Editar</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
-                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Salón:</strong> Laboratorio Cisco</p>
-                                <div class="row justify-content-center mt-4">
-                                    <button class="btn btn-wsp"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
-                                </div>
-                                <div class="d-flex justify-content-evenly">
-                                    <div class="mt-4">
-                                        <button class="btn btn-eliminar">Eliminar</button>
+                            </div>
+                            <div class="pe-5 ps-4 mt-5" style="position: relative;">
+                                <div class="title-card d-flex justify-content-center align-items-center pointer" (click)="generateWeeklyEventschange()">Classmate Disponible</div>
+                                <div class="panel-light p-4 pt-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="assets/perfil.png" alt="" width="100%">
+                                        </div>
+                                        <div class="col-9 pt-2">
+                                            <p style="font-weight: bold; color: black; margin-bottom: 5px;">Paulo Huamán Calderón</p>
+                                            <p style="font-weight: bold;padding: 0; color: darkseagreen;">VII Ciclo Sistemas</p>
+                                        </div>
                                     </div>
-                                    <div class="mt-4">
-                                        <button class="btn btn-editar">Editar</button>
+                                    <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
+                                    <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Salón:</strong> Laboratorio Cisco</p>
+                                    <div class="row justify-content-center mt-4">
+                                        <button class="btn btn-wsp"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
+                                    </div>
+                                    <div class="d-flex justify-content-evenly">
+                                        <div class="mt-4">
+                                            <button class="btn btn-eliminar">Eliminar</button>
+                                        </div>
+                                        <div class="mt-4">
+                                            <button class="btn btn-editar">Editar</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -178,6 +207,7 @@
 
 
                     </div>
+                    
                 </div>
                 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
                     <div class="d-flex flex-row-reverse">
@@ -185,16 +215,16 @@
                     </div>
 
                     <div class="row d-flex justify-content-center align-items-center pt-5" >
-                        <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
-                            <div class="title-card d-flex justify-content-center align-items-center">II Ciclo - Ing. de Sistemas</div>
+                        <div class="col-lg-4 col-md-6 pe-5 ps-4 my-5 mt-2" style="position: relative;">
+                            <div class="title-card d-flex justify-content-center align-items-center">II Ciclo G1 - Ing. de Sistemas</div>
                             <div class="panel-light p-4 pt-5">
                                 <div class="row">
                                     <div class="col-3">
                                         <img src="assets/perfil.png" alt="" width="100%">
                                     </div>
                                     <div class="col-9 pt-2">
-                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Mag. Alvaro Alva</p>
-                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Aula de tutoría: E-102</p>
+                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Maria Antonieta Vidalon Aliaga</p>
+                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Aula de tutoría: L5</p>
                                     </div>
                                 </div>
                                 <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
@@ -212,16 +242,151 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 pe-5 ps-4 mt-2" style="position: relative;">
-                            <div class="title-card d-flex justify-content-center align-items-center">IV Ciclo - Ing. de Sistemas</div>
+                        <div class="col-lg-4 col-md-6 pe-5 ps-4 my-5 mt-2" style="position: relative;">
+                            <div class="title-card d-flex justify-content-center align-items-center">II Ciclo G2 - Ing. de Sistemas</div>
                             <div class="panel-light p-4 pt-5">
                                 <div class="row">
                                     <div class="col-3">
                                         <img src="assets/perfil.png" alt="" width="100%">
                                     </div>
                                     <div class="col-9 pt-2">
-                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Ing. Diana Sanchez</p>
-                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Aula de tutoría: E-202</p>
+                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Alex Robert Villegas Cervera</p>
+                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Aula de tutoría: L6</p>
+                                    </div>
+                                </div>
+                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
+                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
+                                <div class="row justify-content-center mt-4">
+                                    <button class="btn btn-wsp"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
+                                </div>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="mt-4">
+                                        <button class="btn btn-eliminar">Eliminar</button>
+                                    </div>
+                                    <div class="mt-4">
+                                        <button class="btn btn-editar">Editar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 pe-5 ps-4 my-5 mt-2" style="position: relative;">
+                            <div class="title-card d-flex justify-content-center align-items-center">IV Ciclo G1 - Ing. de Sistemas</div>
+                            <div class="panel-light p-4 pt-5">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="assets/perfil.png" alt="" width="100%">
+                                    </div>
+                                    <div class="col-9 pt-2">
+                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Immer Elias Cuellar Rodriguez</p>
+                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Aula de tutoría: L2B</p>
+                                    </div>
+                                </div>
+                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
+                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
+                                <div class="row justify-content-center mt-4">
+                                    <button class="btn btn-wsp"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
+                                </div>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="mt-4">
+                                        <button class="btn btn-eliminar">Eliminar</button>
+                                    </div>
+                                    <div class="mt-4">
+                                        <button class="btn btn-editar">Editar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 pe-5 ps-4 my-5 mt-2" style="position: relative;">
+                            <div class="title-card d-flex justify-content-center align-items-center">IV Ciclo G2 - Ing. de Sistemas</div>
+                            <div class="panel-light p-4 pt-5">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="assets/perfil.png" alt="" width="100%">
+                                    </div>
+                                    <div class="col-9 pt-2">
+                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Diana Lidia Sanchez Torpoco</p>
+                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Aula de tutoría: L7</p>
+                                    </div>
+                                </div>
+                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
+                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
+                                <div class="row justify-content-center mt-4">
+                                    <button class="btn btn-wsp"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
+                                </div>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="mt-4">
+                                        <button class="btn btn-eliminar">Eliminar</button>
+                                    </div>
+                                    <div class="mt-4">
+                                        <button class="btn btn-editar">Editar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 pe-5 ps-4 my-5 mt-2" style="position: relative;">
+                            <div class="title-card d-flex justify-content-center align-items-center">VI Ciclo - Ing. de Sistemas</div>
+                            <div class="panel-light p-4 pt-5">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="assets/perfil.png" alt="" width="100%">
+                                    </div>
+                                    <div class="col-9 pt-2">
+                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Benjamin David Reyna Barreto</p>
+                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Aula de tutoría: Laboratorio Software</p>
+                                    </div>
+                                </div>
+                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
+                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
+                                <div class="row justify-content-center mt-4">
+                                    <button class="btn btn-wsp"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
+                                </div>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="mt-4">
+                                        <button class="btn btn-eliminar">Eliminar</button>
+                                    </div>
+                                    <div class="mt-4">
+                                        <button class="btn btn-editar">Editar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 pe-5 ps-4 my-5 mt-2" style="position: relative;">
+                            <div class="title-card d-flex justify-content-center align-items-center">VII Ciclo - Ing. de Sistemas</div>
+                            <div class="panel-light p-4 pt-5">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="assets/perfil.png" alt="" width="100%">
+                                    </div>
+                                    <div class="col-9 pt-2">
+                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Fernando Manuel Asin Gomez</p>
+                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Aula de tutoría: Laboratorio Cisco</p>
+                                    </div>
+                                </div>
+                                <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
+                                <p style="margin-bottom: 4px;margin-left: 45px; color: black;"><strong>Correo:</strong> Correo upeu.edu.pe</p>
+                                <div class="row justify-content-center mt-4">
+                                    <button class="btn btn-wsp"><i style="font-size: 20px; margin-right: 7px;" class="fa-brands fa-whatsapp"></i>Contactar por Whatsaap</button>
+                                </div>
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="mt-4">
+                                        <button class="btn btn-eliminar">Eliminar</button>
+                                    </div>
+                                    <div class="mt-4">
+                                        <button class="btn btn-editar">Editar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 pe-5 ps-4 my-5 mt-2" style="position: relative;">
+                            <div class="title-card d-flex justify-content-center align-items-center">X Ciclo - Ing. de Sistemas</div>
+                            <div class="panel-light p-4 pt-5">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="assets/perfil.png" alt="" width="100%">
+                                    </div>
+                                    <div class="col-9 pt-2">
+                                        <p style="font-weight: bold; color: black; margin-bottom: 5px;">Geraldine Alvizuri Llerena</p>
+                                        <p style="font-weight: bold;padding: 0; color: darkseagreen;">Aula de tutoría: L2A</p>
                                     </div>
                                 </div>
                                 <p  style="margin-bottom: 4px;margin-top: 10px; margin-left: 45px; color: black;"><strong>Celular:</strong> 987654321</p>
