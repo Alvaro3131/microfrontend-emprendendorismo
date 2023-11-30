@@ -6,6 +6,8 @@ import { Asesor_espiritual } from '../../../models/asesor_espiritual';
 import { CalendarEvent, CalendarEventTimesChangedEvent, CalendarView } from 'angular-calendar';
 import { addDays, getHours, setHours, setMinutes, startOfWeek } from 'date-fns';
 import { Subject } from 'rxjs';
+import { ActivateService } from '../../../services/activate.service';
+import { Activate } from '../../../models/activate';
 
 @Component({
   selector: 'app-tutoria',
@@ -13,8 +15,9 @@ import { Subject } from 'rxjs';
   styleUrls: ['./tutoria.component.scss']
 })
 export class TutoriaComponent implements OnInit {
-
+  activateInsert:Activate = new Activate()
   psicologos:Psicologo[]=[];
+  activate:any[]=[];
   asesores:Asesor_espiritual[]=[];
   asesor:Asesor_espiritual = new Asesor_espiritual;
 
@@ -36,22 +39,42 @@ export class TutoriaComponent implements OnInit {
   emailPsico?:string;
   type_personPsico?:string;
 
-
   constructor (
     private psicoService: PsicologiaService,
-    private asesorService: EspiritualService
-  ) { 
+    private asesorService: EspiritualService,
+    private _serviceActivate: ActivateService
+  ) {
     this.generateWeeklyEvents();
   }
 
   ngOnInit() {
     this.getPsicologos();
     this.getAsesores();
+    this.getActivate()
+  }
+
+  registrar(){
+    console.log(this.activateInsert);
+    this._serviceActivate.insertActivate(this.activateInsert).subscribe(data => {
+      this.getActivate();
+    });
   }
 
   getPsicologos() {
     this.psicoService.getPsicologos().subscribe(data => {
       this.psicologos = data.data;
+    });
+  }
+
+  getActivate(){
+    this._serviceActivate.getActivate().subscribe(data => {
+      this.activate = data.data;
+    });
+  }
+
+  eliminar(id:number){
+    this._serviceActivate.deleteActivate(id).subscribe(data => {
+      this.getActivate()
     });
   }
 
@@ -174,13 +197,13 @@ export class TutoriaComponent implements OnInit {
     this.events = [];
     const today = new Date();
     const nextYear = new Date(today.getFullYear() + 1, 0, 1); // Genera eventos para el próximo año
-  
+
     let currentDay = startOfWeek(today, { weekStartsOn: 0 }); // Inicia en el próximo domingo
     while (currentDay < nextYear) {
       if (currentDay.getDay() === 2) { // Martes (2)
         const eventStart = setHours(setMinutes(currentDay, 0), 15); // Martes a las 3:00 PM
         const eventEnd = setHours(setMinutes(currentDay, 0), 17); // Martes a las 5:00 PM
-  
+
         const event: CalendarEvent = {
           start: eventStart,
           end: eventEnd,
