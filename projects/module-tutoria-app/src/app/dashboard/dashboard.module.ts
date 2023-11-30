@@ -9,13 +9,20 @@ import { AddPsicologoComponent } from './components/modals/add-psicologo/add-psi
 import { AddAsesorEspiritualComponent } from './components/modals/add-asesor-espiritual/add-asesor-espiritual.component';
 import { AddClassmateComponent } from './components/modals/add-classmate/add-classmate.component';
 import { AddTutorComponent } from './components/modals/add-tutor/add-tutor.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { EditTutorComponent } from './components/modals/edit-tutor/edit-tutor.component';
+import { EditPsicologoComponent } from './components/modals/edit-psicologo/edit-psicologo.component';
+import { EditAsesorEspiritualComponent } from './components/modals/edit-asesor-espiritual/edit-asesor-espiritual.component';
 
 
 @NgModule({
-  declarations: [DahsboardComponent, RegistrarAsistenciaComponent, TutoriaComponent, AddPsicologoComponent, AddAsesorEspiritualComponent, AddClassmateComponent, AddTutorComponent], // declare the component here
+  declarations: [DahsboardComponent, RegistrarAsistenciaComponent, TutoriaComponent, AddPsicologoComponent, AddAsesorEspiritualComponent, AddClassmateComponent, AddTutorComponent, EditTutorComponent, EditPsicologoComponent, EditAsesorEspiritualComponent], // declare the component here
   imports: [
     CommonModule,
     DashboardRoutingModule,
+    FormsModule,
+    HttpClientModule,
     SharedModule
   ]
 })

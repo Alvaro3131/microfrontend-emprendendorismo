@@ -9,40 +9,41 @@
           <form>
             <div class="mb-3">
               <label for="name" class="col-form-label">Nombres:</label>
-              <input type="text" class="form-control" id="name" placeholder="Ingrese los nombres del psicológico">
+              <input type="text" class="form-control" id="name" placeholder="Ingrese los nombres del asesor" [(ngModel)]="name" name="name">
             </div>
             <div class="row">
                 <div class="col-6">
                     <div class="mb-3">
                         <label for="apepat" class="col-form-label">Apellidos Paterno:</label>
-                        <input type="text" class="form-control" id="apepat" placeholder="Ingrese el apellido paterno">
+                        <input type="text" class="form-control" id="apepat" placeholder="Ingrese el apellido paterno" [(ngModel)]="apepat" name="apepat">
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="mb-3">
                         <label for="apemat" class="col-form-label">Apellidos Materno:</label>
-                        <input type="text" class="form-control" id="apemat" placeholder="Ingrese el apellido materno">
+                        <input type="text" class="form-control" id="apemat" placeholder="Ingrese el apellido materno" [(ngModel)]="apemat" name="apemat">
                     </div>
                 </div>
             </div>
             <div class="mb-3">
                 <label for="cargo" class="col-form-label">Cargo que desempeña:</label>
-                <input type="text" class="form-control" id="cargo" placeholder="Ejem: Psicólogo de la E.P. de Ingeniería de sistemas">
+                <input type="text" class="form-control" id="cargo" placeholder="Ejem: Asesor espiritual de la E.P. de Ingeniería de sistemas" [(ngModel)]="asesor_espiritual.type_person" name="type_person">
             </div>
             <div class="mb-3">
                 <label for="correo" class="col-form-label">Correo electrónico:</label>
-                <input type="email" class="form-control" id="correo" placeholder="Ingrese el correo electrónico">
+                <input type="email" class="form-control" id="correo" placeholder="Ingrese el correo electrónico" [(ngModel)]="asesor_espiritual.email" name="email">
             </div>
             <div class="mb-3">
                 <label for="nro-whatsapp" class="col-form-label">Nro de Whatsapp:</label>
-                <input type="number" class="form-control" id="nro-whatsapp" placeholder="Ingrese el número de WhatsApp">
+                <input type="number" class="form-control" id="nro-whatsapp" placeholder="Ingrese el número de WhatsApp" [(ngModel)]="asesor_espiritual.phone" name="phone">
             </div>
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary btn-registrar">Registrar</button>
+          <button type="button" class="btn btn-primary btn-registrar" (click)="registrarAsesor()">Registrar</button>
         </div>
       </div>
     </div>
-  </div>
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" hidden #close_modal2></button>
+</div>

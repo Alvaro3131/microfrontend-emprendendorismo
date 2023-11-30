@@ -1,0 +1,48 @@
+<div class="modal fade" id="editPsicologoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Editar psicólogo</h1>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="col-form-label">Nombres:</label>
+              <input type="text" class="form-control" id="name" placeholder="Ingrese los nombres del psicólogo" [(ngModel)]="name_edit2" name="name_edit2">
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="apepat" class="col-form-label">Apellidos Paterno:</label>
+                        <input type="text" class="form-control" id="apepat" placeholder="Ingrese el apellido paterno" [(ngModel)]="apepat_edit2" name="apepat_edit2">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="apemat" class="col-form-label">Apellidos Materno:</label>
+                        <input type="text" class="form-control" id="apemat" placeholder="Ingrese el apellido materno" [(ngModel)]="apemat_edit2" name="apemat_edit2">
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="cargo" class="col-form-label">Cargo que desempeña:</label>
+                <input type="text" class="form-control" id="cargo" placeholder="Ejem: Psicólogo de la E.P. de Ingeniería de sistemas" [(ngModel)]="type_person_edit2" name="type_person_edit2">
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="col-form-label">Correo electrónico:</label>
+                <input type="email" class="form-control" id="correo" placeholder="Ingrese el correo electrónico" [(ngModel)]="email_edit2" name="email_edit2">
+            </div>
+            <div class="mb-3">
+                <label for="nro-whatsapp" class="col-form-label">Nro de Whatsapp:</label>
+                <input type="number" class="form-control" id="nro-whatsapp" placeholder="Ingrese el número de WhatsApp" [(ngModel)]="phone_edit2" name="phone_edit2">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary btn-registrar" (click)="editarPsicologo()">Editar</button>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" hidden #close_modal4></button>
+</div>
