@@ -1,14 +1,49 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { CalendarEvent, CalendarEventTimesChangedEvent, CalendarView } from 'angular-calendar';
 import { addDays, getHours, setHours, setMinutes, startOfWeek } from 'date-fns';
 import { Subject } from 'rxjs';
+import { TutorShipService } from '../../../services/tutorship.service';
 @Component({
   templateUrl: './tutorships.component.html',
   styleUrls: ['./tutorships.component.scss']
 })
-export class TutorshipsComponent {
-  constructor(){
+export class TutorshipsComponent  implements OnInit{
+  psicologies: any[] = []
+  spritual: any[] = []
+  percent: number = 0;
+  allActivities: number = 0;
+  particpatedActivities: number = 0;
+  lugar: string = '';
+  fecha: string = '';
+  name:string='';
+  constructor(private tutorship: TutorShipService ){
     this.generateWeeklyEvents();
+  }
+  ngOnInit(): void {
+    this.tutorship.getDataPsicology().subscribe((data) => {
+      console.log(data);
+      this.psicologies = data.data;
+    });
+    this.tutorship.getDataSpiritual().subscribe((data) => {
+      this.spritual = data.data;
+    });
+    this.tutorship.getDataHoursAcivate().subscribe((data) => {
+      this.allActivities = data.data.allActivates;
+      this.particpatedActivities = data.data.getAllActivatesForPerson;
+      this.percent = Math.round((this.particpatedActivities / this.allActivities) * 100);
+    });
+    this.tutorship.getAllActivates().subscribe((data) => {
+      if (data.data.length > 0) {
+        const lastElement = data.data[data.data.length - 1]; // Obteniendo el último elemento
+        const lastElementId = lastElement.id; // Suponiendo que el ID está almacenado en la propiedad 'id'
+    
+        this.tutorship.getActivateId(lastElementId).subscribe((data) => {
+          this.lugar = data.data.place;
+          this.fecha = data.data.date;
+          this.name=data.data.name;
+        });
+      }
+    });
   }
   view: CalendarView = CalendarView.Week;
 
@@ -77,8 +112,13 @@ export class TutorshipsComponent {
       currentDay = addDays(currentDay, 1); // Avanza al próximo día
     }
   }
-  abrirWhatsApp() {
-    const whatsappURL = 'https://api.whatsapp.com/send/?phone=51981131748&text&type=phone_number&app_absent=0';
-    window.open(whatsappURL, '_blank');
+  abrirWhatsApp(phone?: string) {
+    if(phone){
+      const whatsappURL = `https://api.whatsapp.com/send/?phone=51${phone}&text&type=phone_number&app_absent=0`;
+      window.open(whatsappURL, '_blank');
+    }else{
+      const whatsappURL = 'https://api.whatsapp.com/send/?phone=51981131748&text&type=phone_number&app_absent=0';
+      window.open(whatsappURL, '_blank');
+    }
   }
 }
