@@ -14,7 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { EditTutorComponent } from './components/modals/edit-tutor/edit-tutor.component';
 import { EditPsicologoComponent } from './components/modals/edit-psicologo/edit-psicologo.component';
 import { EditAsesorEspiritualComponent } from './components/modals/edit-asesor-espiritual/edit-asesor-espiritual.component';
-
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 
 @NgModule({
   declarations: [DahsboardComponent, RegistrarAsistenciaComponent, TutoriaComponent, AddPsicologoComponent, AddAsesorEspiritualComponent, AddClassmateComponent, AddTutorComponent, EditTutorComponent, EditPsicologoComponent, EditAsesorEspiritualComponent], // declare the component here
@@ -23,7 +24,11 @@ import { EditAsesorEspiritualComponent } from './components/modals/edit-asesor-e
     DashboardRoutingModule,
     FormsModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
   ]
 })
 export class DashboardModule { }

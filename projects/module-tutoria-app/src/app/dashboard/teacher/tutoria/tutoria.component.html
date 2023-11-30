@@ -197,72 +197,13 @@
                         </div>
 
                         <div class="col-lg-6 col-md-8 pe-5 ps-4 mt-2" style="position: relative;">
-                            <table class="table table-bordered">
-                                <thead>
-                                  <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col">Dom</th>
-                                    <th scope="col">Lun</th>
-                                    <th scope="col">Mar</th>
-                                    <th scope="col">Mie</th>
-                                    <th scope="col">Jue</th>
-                                    <th scope="col">Vie</th>
-                                    <th scope="col">Sab</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <th>8 - 9 am</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                  </tr>
-                                  <tr>
-                                    <th>9 - 10 am</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                  </tr>
-                                  <tr>
-                                    <th>10 - 11 am</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                  </tr>
-                                  <tr>
-                                    <th>11 - 12 am</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                  </tr>
-                                  <tr>
-                                    <th>12 - 1 pm</th>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                  </tr>
-                                </tbody>
-                            </table>
+                            <mwl-calendar-week-view
+                                    [viewDate]="viewDate"
+                                    [events]="events"
+                                    [dayStartHour]="startHour"
+                                    [dayEndHour]="endHour"
+                                  >
+                            </mwl-calendar-week-view>
                         </div>
 
 
