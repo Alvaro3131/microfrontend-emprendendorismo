@@ -29,7 +29,7 @@ export class TutorshipsComponent  implements OnInit{
     });
     this.tutorship.getDataHoursAcivate().subscribe((data) => {
       this.allActivities = data.data.allActivates;
-      this.particpatedActivities = data.data.getAllActivatesForPerson;
+      this.particpatedActivities = 4;
       this.percent = Math.round((this.particpatedActivities / this.allActivities) * 100);
     });
     this.tutorship.getAllActivates().subscribe((data) => {
